@@ -1,0 +1,46 @@
+.nav{
+    background-color: white;
+}
+
+.navlogo{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.navlogo-container{
+    padding: 15px;
+    vertical-align:top;
+    color: #4d4d4d;
+    font-weight: 700;
+}
+
+.navItems{
+    display:inline-block;
+}
+
+.pair-selection-container{
+     border-left: 1px solid lightgray;
+     border-right: 1px solid lightgray;
+     margin: 5px 15px;
+     padding: 0 15px;
+}
+
+.pair-selection{
+    padding-right: 15px;
+    display:inline-block;
+}
+
+.pair{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.selection{
+    color: rgba(21, 35, 44, 0.5);
+    font-size: 11px;
+}
+
+.arrow{
+    font-size: 20px;
+    vertical-align: super;
+}
