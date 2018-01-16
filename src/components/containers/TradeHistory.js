@@ -10,203 +10,204 @@ export class TradeHistory extends React.Component {
   render() {
 		return (
 		  <div className="card card-fh">
-		  	<div className="card-fixed-header cw2">
+		  	<div className="card-fixed-header">
 					<h2 className="card-title">Trade History</h2>
 					<div className="card-panel-header">
 						<label>Total Size</label>
 						<label>Price(EUR)</label>
 						<label>Time</label>
+						<label>Exchange</label>
 					</div>
 				</div>
 				<div className="card-panel-body m-t-fh">
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div><div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up">9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down">9830.17</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down">9830.17</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down">9830.17</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down">9830.17</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down">9830.17</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down">9830.17</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down">9830.17</span><span>12:13:37</span>
+						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div><div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div><div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span>
+						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 				</div>
 			</div>

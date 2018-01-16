@@ -23,22 +23,22 @@ class App extends React.Component {
 	return (
 	  <div>
 		<Header />
-			<Row className="no-gutters">
-				<Col sm={2} md={2}>
-					<OrderForm />
-				</Col>
-				<Col sm={3} md={3}>
-					<OrderBook />
-				</Col>
-				<Col sm={5} md={5}>
-					<div className="card">
-						<h2 className="card-title">Price Chart</h2>
-					</div>
-				</Col>
-				<Col sm={2} md={2}>
-					<TradeHistory />
-				</Col>
-			</Row>
+		<div className="content">
+			<div className="col-16">
+				<OrderForm />
+			</div>
+			<div className="col-22">
+				<OrderBook />
+			</div>
+			<div className="col-40">
+				<div className="card">
+					<h2 className="card-title">Price Chart</h2>
+				</div>
+			</div>
+			<div className="col-22">
+				<TradeHistory />
+			</div>
+		</div>
 	  </div>
 	);
   }
