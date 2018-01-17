@@ -31,7 +31,7 @@ export class OrderBook extends React.Component {
 						</div>))}
 
 					<div className="card-panel-body-rows lbl">
-						<label>Eur Spread</label>
+						<label>{ this.props.currentPair.unit2 } Spread</label>
 						<label>0.47</label>
 					</div>
 

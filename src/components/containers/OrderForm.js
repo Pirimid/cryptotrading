@@ -7,6 +7,14 @@ import * as actions from '../../actions/fuelSavingsActions';
 
 export class OrderForm extends React.Component {
 
+    state = {
+		activeTab: 'market',
+	};
+
+  handleTabClick = (event, param) => {
+        this.setState({ activeTab: param });
+  };
+
   render() {
 		return (
 		  <div className="card card-order-form">
@@ -15,9 +23,9 @@ export class OrderForm extends React.Component {
 				<div className="card-body">
 					<div className="tabs">
 						<ul className="tab-header-list">
-							<li className="active">Market</li>
-							<li>Limit</li>
-							<li>Stop</li>
+							<li onClick={this.handleTabClick('market')} className={(this.state.activeTab == 'market' ? 'active' : '')} >Market</li>
+							<li onClick={this.handleTabClick('limit')} className={(this.state.activeTab == 'limit' ? 'active' : '')} >Limit</li>
+							<li onClick={this.handleTabClick('stop')} className={(this.state.activeTab == 'stop' ? 'active' : '')} >Stop</li>
 						</ul>
 						<div className="clearfix"></div><br />
 						<div className="tab-content">

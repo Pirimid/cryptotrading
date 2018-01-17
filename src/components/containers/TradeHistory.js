@@ -14,7 +14,7 @@ export class TradeHistory extends React.Component {
 					<h2 className="card-title">Trade History</h2>
 					<div className="card-panel-header">
 						<label>Total Size</label>
-						<label>Price(EUR)</label>
+						<label>Price({ this.props.currentPair.unit2 })</label>
 						<label>Time</label>
 						<label>Exchange</label>
 					</div>
