@@ -8,19 +8,16 @@ export function saveFuelSavings(settings) {
     // thunks allow for pre-processing actions, calling apis, and dispatching multiple actions
     // in this case at this point we could call a service that would persist the fuel savings
     return dispatch({
-      type: types.SAVE_FUEL_SAVINGS,
+      type: types.UPDATE_ORDER_BOOK,
       dateModified: getFormattedDateTime(),
       settings
     });
   };
 }
 
-export function calculateFuelSavings(settings, fieldName, value) {
+export function updateOrderBook(value) {
   return {
-    type: types.CALCULATE_FUEL_SAVINGS,
-    dateModified: getFormattedDateTime(),
-    settings,
-    fieldName,
-    value
+    type: types.UPDATE_ORDER_BOOK,
+    payload: value
   };
 }

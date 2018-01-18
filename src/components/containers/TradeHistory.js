@@ -11,7 +11,7 @@ export class TradeHistory extends React.Component {
 		return (
 		  <div className="card card-fh">
 		  	<div className="card-fixed-header">
-					<h2 className="card-title">Trade History</h2>
+					<h2 className="card-title" data-card="tradehistory" onClick={this.handleCardClick}>Trade History</h2>
 					<div className="card-panel-header">
 						<label>Total Size</label>
 						<label>Price({ this.props.currentPair.unit2 })</label>

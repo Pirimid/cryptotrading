@@ -18,25 +18,43 @@ import {Grid, Row, Col } from 'react-bootstrap';
 // component at the top-level.
 
 class App extends React.Component {
+
+	state = {
+		activeCard: 'orderform',
+	};
+
+    handleCardClick = (event) => {
+    	console.log('click');
+        this.setState({ activeCard: event.target.getAttribute('data-card') });
+    };
+
   render() {
 	const activeStyle = { color: 'blue' };
 	return (
 	  <div>
 		<Header />
 		<div className="content">
-			<div className="col-16">
-				<OrderForm />
-			</div>
-			<div className="col-22">
-				<OrderBook />
-			</div>
-			<div className="col-40">
-				<div className="card">
-					<h2 className="card-title">Price Chart</h2>
+			<div className={(this.state.activeCard == 'orderform' ? 'show' : '')}>
+				<div className="col-16 col-1">
+					<OrderForm />
 				</div>
 			</div>
-			<div className="col-22">
-				<TradeHistory />
+			<div className={(this.state.activeCard == 'orderbook' ? 'show' : '')}>
+				<div className="col-22 col-2">
+					<OrderBook />
+				</div>
+			</div>
+			<div className={(this.state.activeCard == 'orderbook' ? 'show' : '')}>
+				<div className="col-40 col-3">
+					<div className="card">
+						<h2 className="card-title">Price Chart</h2>
+					</div>
+				</div>	
+			</div>
+			<div className={(this.state.activeCard == 'tradehistory' ? 'show' : '')}>
+				<div className="col-22 col-4">
+					<TradeHistory />
+				</div>
 			</div>
 		</div>
 	  </div>

@@ -74,9 +74,14 @@ body{
     text-transform:uppercase;
     transition: all .5s;
     font-size: 12px;
+    outline: none !important;
     &:hover {
         background: rgba(255, 255, 255, 0.25);
         color: #fff; 
+        outline: none;
+    }
+    &:focus {
+        outline: none
     }
 }
 .btn.fw {
@@ -96,6 +101,16 @@ body{
     &:hover {
         background: darken(#4da53c, 10%)
     }
+}
+.btn.info {
+    background: #5e9be9;
+    color: #fff;
+    &:hover {
+        background: darken(#5e9be9, 10%)
+    }
+}
+.btn.fs {
+    font-size: 10px;
 }
 
 .form-input {
@@ -360,5 +375,33 @@ body{
                 color: #fff;
             }
         }
+    }
+}
+
+@media(max-width: 768px) {
+    .content [class*=col-] {
+        width: 100%;
+    }
+    .card-title {
+        position: fixed;
+        bottom: 0;
+        width: 25%;
+        z-index: 9;
+    }
+    .col-2 .card-title {
+        margin-left: 25%;
+    }
+    .col-3 .card-title {
+        margin-left: 50%;
+    }
+    .col-4 .card-title {
+        margin-left: 75%;
+    }
+    .card-fixed-header {
+        position: relative;
+        width: 100%;
+    }
+    .m-t-fh {
+        margin: 0;
     }
 }
