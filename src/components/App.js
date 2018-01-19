@@ -2,15 +2,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, NavLink, Route } from 'react-router-dom';
-import HomePage from './HomePage';
 import Header from './containers/Header';
 
 import OrderForm from './containers/OrderForm';
 import OrderBook from './containers/OrderBook';
 import TradeHistory from './containers/TradeHistory';
 
-import AboutPage from './AboutPage';
-import NotFoundPage from './NotFoundPage';
+import OrderTable from './containers/OrderTable';
+import NewsBtc from './containers/NewsBtc';
+
 import {Grid, Row, Col } from 'react-bootstrap';
 
 // This is a class-based component because the current
@@ -56,6 +56,17 @@ class App extends React.Component {
 					<TradeHistory />
 				</div>
 			</div>
+		</div>
+		<div className="clearfix"></div>
+		<div className="order-news-section">
+			<Row className="no-gutters">
+				<Col md={8}>
+					<OrderTable />
+				</Col>
+				<Col md={4}>
+					<NewsBtc />
+				</Col>
+			</Row>
 		</div>
 	  </div>
 	);

@@ -19,7 +19,7 @@ export class TradeHistory extends React.Component {
 						<label>Exchange</label>
 					</div>
 				</div>
-				<div className="card-panel-body m-t-fh">
+				<div className="card-panel-body">
 					<div className="card-panel-body-rows">
 						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>

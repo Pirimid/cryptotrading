@@ -8,14 +8,14 @@ import * as actions from '../../actions/fuelSavingsActions';
 
 export class OrderBook extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
+    constructor(props) {
+        super(props);
 
-    //     function onInterval(){
-    //        this.props.actions.updateOrderBook(this.props.orderBook.reverse());
-    //     }
-    //     setInterval( onInterval.bind(this) , 3000);
-    // }
+        function onInterval(){
+           this.props.actions.updateOrderBook(this.props.orderBook.reverse());
+        }
+        setInterval( onInterval.bind(this) , 500);
+    }
 
   render() {
 		return (
@@ -28,7 +28,7 @@ export class OrderBook extends React.Component {
 						<label>Exchange</label>
 					</div>
 				</div>
-				<div className="card-panel-body m-t-fh">
+				<div className="card-panel-body">
 
 					{this.props.orderBook.map((object, i) => (
 						<div className="card-panel-body-rows">
@@ -54,15 +54,11 @@ export class OrderBook extends React.Component {
   }
 }
 
-
-
-// OrderBook.propTypes = {
-//   actions: PropTypes.object.isRequired,
-//   currentPair: PropTypes.object.isRequired,
-//   orderBook: PropTypes.object.isRequired
-// };
-
-
+OrderBook.propTypes = {
+  actions: PropTypes.object.isRequired,
+  currentPair: PropTypes.object.isRequired,
+  orderBook: PropTypes.array.isRequired
+};
 
 function mapStateToProps(state) {
   return {
