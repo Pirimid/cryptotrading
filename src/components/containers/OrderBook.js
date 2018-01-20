@@ -4,7 +4,8 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {Grid, Row, Col } from 'react-bootstrap';
 import {getFormattedNumber} from '../../utils/formatNumbers';
-import * as actions from '../../actions/fuelSavingsActions';
+import * as actions from '../../actions/orderBookActions';
+import * as orderFormActions from '../../actions/orderFormActions';
 
 export class OrderBook extends React.Component {
 
@@ -16,6 +17,24 @@ export class OrderBook extends React.Component {
         }
         setInterval( onInterval.bind(this) , 700);
     }
+
+    handleMarketSizeClick = (value) => {
+        return (() => {
+            let orderForm = {
+                activeTab : 'market',
+                buySell : 'buy',
+                buyAmount : value.marketSize * value.price ,
+                buySize : value.marketSize,
+                exchange : value.exchange
+            };
+            this.props.orderFormActions.updateOrderForm( orderForm );
+        }).bind(this);
+    };
+
+    handleSpreadMarketSizeClick = (value) => {
+        this.props.actions.updateOrderFormExchange( value );
+    };
+
 
   render() {
 		return (
@@ -32,7 +51,7 @@ export class OrderBook extends React.Component {
 
 					{this.props.orderBook.active.map((object, i) => (
 						<div className="card-panel-body-rows">
-							<span>{getFormattedNumber(object.marketSize)}</span>
+							<span onClick={this.handleMarketSizeClick(object)} >{getFormattedNumber(object.marketSize)}</span>
 							<span className="down">{object.price}</span>
 							<span>{object.exchange}</span>
 						</div>))}
@@ -54,12 +73,6 @@ export class OrderBook extends React.Component {
   }
 }
 
-OrderBook.propTypes = {
-  actions: PropTypes.object.isRequired,
-  currentPair: PropTypes.object.isRequired,
-  orderBook: PropTypes.object.isRequired
-};
-
 function mapStateToProps(state) {
   return {
 	currentPair: state.currentPair,
@@ -69,7 +82,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-	actions: bindActionCreators(actions, dispatch)
+	actions: bindActionCreators(actions, dispatch),
+	orderFormActions: bindActionCreators(orderFormActions, dispatch)
   };
 }
 

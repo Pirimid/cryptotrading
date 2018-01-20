@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {Grid, Row, Col } from 'react-bootstrap';
-import * as actions from '../../actions/fuelSavingsActions';
+import * as actions from '../../actions/orderBookActions';
 
 export class TradeHistory extends React.Component {
 
@@ -214,11 +214,6 @@ export class TradeHistory extends React.Component {
 		);
   }
 }
-
-TradeHistory.propTypes = {
-  actions: PropTypes.object.isRequired,
-  currentPair: PropTypes.object.isRequired
-};
 
 function mapStateToProps(state) {
   return {
