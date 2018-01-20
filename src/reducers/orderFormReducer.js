@@ -7,13 +7,27 @@ export default function orderFormReducer(state = initialState.orderForm, action)
 
   switch (action.type) {
     case types.UPDATE_ORDER_FORM_TAB:
-        return objectAssign({}, state, { 'activeTab' : action.payload  } );
+        newState = {
+            activeTab : action.payload,
+            limitPrice : 0,
+            buyAmount : '',
+            buySize : (state.isBuy ? 0.00000000 : 0.00)
+        }
+        return objectAssign({}, state, newState );
 
     case types.UPDATE_ORDER_FORM_EXCHANGE:
         return objectAssign({}, state, { 'exchange' : action.payload  } );
 
     case types.UPDATE_ORDER_FORM:
         return objectAssign({}, state, action.payload );
+
+    case types.TOGGLE_BUY_SELL_ORDER_FORM:
+        newState = {
+            buyAmount : '',
+            buySize : (state.isBuy ? 0.00000000 : 0.00),
+            isBuy : !state.isBuy
+        }
+        return objectAssign({}, state, newState );
 
     default:
       return state;

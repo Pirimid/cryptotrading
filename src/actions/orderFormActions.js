@@ -20,3 +20,9 @@ export function updateOrderForm(value) {
     payload: value
   };
 }
+
+export function toggleBuySellOrderForm() {
+  return {
+    type: types.TOGGLE_BUY_SELL_ORDER_FORM,
+  };
+}

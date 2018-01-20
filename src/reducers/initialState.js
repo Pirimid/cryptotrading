@@ -60,9 +60,10 @@ export default {
     },
     orderForm : {
         activeTab : 'market',
-        buySell : 'buy',
+        isBuy : true,
         buyAmount : '',
         buySize : 0.00000000,
+        limitPrice : 0,
         exchange : 'GDAX'
     },
     orderBook : {

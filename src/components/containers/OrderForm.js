@@ -11,6 +11,11 @@ export class OrderForm extends React.Component {
         this.props.actions.updateOrderFormTab( event.target.getAttribute('data-tab') );
     };
 
+    handleBuySellToggle = () => {
+        this.props.actions.toggleBuySellOrderForm();
+    };
+
+
     handleExchangeSelection = (value) => {
         this.props.actions.updateOrderFormExchange( value );
     };
@@ -29,20 +34,20 @@ export class OrderForm extends React.Component {
 						</ul>
 						<div className="clearfix"></div><br />
 						<div className="tab-content">
-							<button className="btn primary hw">Buy</button>
-							<button className="btn hw">Sell</button>
+							<button onClick={this.handleBuySellToggle} className={(this.props.orderForm.isBuy ? 'primary' : '') + " btn hw" } >Buy</button>
+							<button onClick={this.handleBuySellToggle} className={(!this.props.orderForm.isBuy ? 'secondary' : '') + " btn hw" } >Sell</button>
 							<div className="clearfix"></div><br />
 							<small className="lbl-sm">Amount</small>
 							<div className="form-input-group">
 								<input type="text" className="form-input" value={this.props.orderForm.buyAmount} placeholder="0.00" />
-								<span>{ this.props.currentPair.unit2 }</span>
+								<span>{ !this.props.orderForm.isBuy || this.props.orderForm.activeTab == 'limit' ? this.props.currentPair.unit1 : this.props.currentPair.unit2 }</span>
 							</div>
 							<div className="clearfix"></div><br />
 							<div className={(this.props.orderForm.activeTab == 'limit' ? 'show' : 'hide')}>
 								<small className="lbl-sm">Limit Price</small>
 								<div className="form-input-group">
-									<input type="text" className="form-input" placeholder="0.00" />
-									<span>{ this.props.currentPair.unit1 }</span>
+									<input type="text" value={ this.props.orderForm.limitPrice } className="form-input" placeholder="0.00" />
+									<span>{ this.props.currentPair.unit2 }</span>
 								</div>
 								<div className="clearfix"></div><br />
 							</div>
@@ -50,13 +55,17 @@ export class OrderForm extends React.Component {
 								<small className="lbl-sm">Stop Price</small>
 								<div className="form-input-group">
 									<input type="text" className="form-input" placeholder="0.00" />
-									<span>{ this.props.currentPair.unit1 }</span>
+									<span>{ this.props.currentPair.unit2 }</span>
 								</div>
 								<div className="clearfix"></div><br />
 							</div>
 							<div className="sep-line"></div>
 							<div className="clearfix">
-								<div className="pull-left"><label className="lbl-sm">Total<small>({ this.props.currentPair.unit1 })</small>=</label></div>
+								<div className="pull-left">
+								    <label className="lbl-sm">Total
+								        <small>({ this.props.orderForm.isBuy ? this.props.currentPair.unit1 : this.props.currentPair.unit2 })</small>=
+                                    </label>
+                                </div>
 								<div className="pull-right"><label className="lbl-sm">{this.props.orderForm.buySize}</label></div>
 							</div>
 							<div className="clearfix"></div><br />
@@ -71,7 +80,7 @@ export class OrderForm extends React.Component {
                                 </div>
 							</div>
 							<div className="clearfix"></div><br />
-							<button className="btn block primary">Place Buy Order</button>
+							<button className={( this.props.orderForm.isBuy ? 'primary' : 'secondary' ) + " btn block" } >Place Buy Order</button>
 						</div>
 						<br />
 					</div>

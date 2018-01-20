@@ -22,7 +22,7 @@ export class OrderBook extends React.Component {
         return (() => {
             let orderForm = {
                 activeTab : 'market',
-                buySell : 'buy',
+                isBuy : true,
                 buyAmount : value.marketSize * value.price ,
                 buySize : value.marketSize,
                 exchange : value.exchange
@@ -31,12 +31,52 @@ export class OrderBook extends React.Component {
         }).bind(this);
     };
 
+    handlePriceClick = (value) => {
+        return (() => {
+            let orderForm = {
+                activeTab : 'limit',
+                isBuy : false,
+                limitPrice : value.price,
+                buyAmount : 0,
+                buySize : 0,
+                exchange : value.exchange
+            };
+            this.props.orderFormActions.updateOrderForm( orderForm );
+        }).bind(this);
+    };
+
     handleSpreadMarketSizeClick = (value) => {
+        return (() => {
+            let orderForm = {
+                activeTab : 'market',
+                isBuy : false,
+                buyAmount : value.marketSize * value.price,
+                buySize : value.marketSize,
+                exchange : value.exchange
+            };
+            this.props.orderFormActions.updateOrderForm( orderForm );
+        }).bind(this);
+
+
         this.props.actions.updateOrderFormExchange( value );
     };
 
+    handleSpreadPriceClick = (value) => {
+        return (() => {
+            let orderForm = {
+                activeTab : 'limit',
+                isBuy : true,
+                limitPrice : value.price,
+                buyAmount : 0,
+                buySize : 0,
+                exchange : value.exchange
+            };
+            this.props.orderFormActions.updateOrderForm( orderForm );
+        }).bind(this);
+    };
 
-  render() {
+
+    render() {
 		return (
 		  <div className="card card-fh">
 				<div className="card-fixed-header">
@@ -52,7 +92,7 @@ export class OrderBook extends React.Component {
 					{this.props.orderBook.active.map((object, i) => (
 						<div className="card-panel-body-rows">
 							<span onClick={this.handleMarketSizeClick(object)} >{getFormattedNumber(object.marketSize)}</span>
-							<span className="down">{object.price}</span>
+							<span onClick={this.handlePriceClick(object)} className="down">{object.price}</span>
 							<span>{object.exchange}</span>
 						</div>))}
 
@@ -63,14 +103,14 @@ export class OrderBook extends React.Component {
 
 					{this.props.orderBook.active.map((object, i) => (
 						<div className="card-panel-body-rows">
-							<span>{getFormattedNumber(object.marketSize)}</span>
-							<span className="up">{object.price}</span>
+							<span onClick={this.handleSpreadMarketSizeClick(object)} >{getFormattedNumber(object.marketSize)}</span>
+							<span onClick={this.handleSpreadPriceClick(object)} className="up">{object.price}</span>
 							<span>{object.exchange}</span>
 						</div>))}
 				</div>
 			</div>
 		);
-  }
+    }
 }
 
 function mapStateToProps(state) {

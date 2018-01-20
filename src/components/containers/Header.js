@@ -23,17 +23,6 @@ export class Header extends React.Component {
 						<li><a href="#"><span>BTC/USD</span><span>$11926.0</span><span className="down">0.62%</span></a></li>
 						<li><a href="#"><span>BTC/USD</span><span>$11926.0</span><span className="up">1.5%</span></a></li>
 					</ul>
-					<h5 className="nav-title">BITCOIN CASH(BCH)</h5>
-					<ul className="nav-dropdown-list">
-						<li><a href="#"><span>BCH/USD</span><span>$11926.0</span><span className="up">0.40%</span></a></li>
-						<li><a href="#"><span>BCH/USD</span><span>$11926.0</span><span className="down">0.62%</span></a></li>
-					</ul>
-					<h5 className="nav-title">ETHER</h5>
-					<ul className="nav-dropdown-list">
-						<li><a href="#"><span>ETH/USD</span><span>$11926.0</span><span className="up">0.40%</span></a></li>
-						<li><a href="#"><span>ETH/USD</span><span>$11926.0</span><span className="down">0.62%</span></a></li>
-						<li><a href="#"><span>ETH/USD</span><span>$11926.0</span><span className="down">0.62%</span></a></li>
-					</ul>
 			  </div>
 		  </div>
 		  <div className="navItems">

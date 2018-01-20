@@ -209,6 +209,13 @@ body{
         background: darken(#4da53c, 10%)
     }
 }
+.btn.secondary {
+    background-color: #ff6939;
+    color: #fff;
+    &:hover {
+        background: darken(#ff6939, 10%)
+    }
+}
 .btn.info {
     background: #5e9be9;
     color: #fff;
