@@ -2,21 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {Grid, Row, Col } from 'react-bootstrap';
-import * as actions from '../../actions/fuelSavingsActions';
+import {Grid, Row, Col, Table } from 'react-bootstrap';
+import '../../styles/NewTable.scss';
+import * as actions from '../../actions/orderBookActions';
 
 export class OrderTable extends React.Component {
 
   render() {
 		return (
 			<div>
-				<h2 className="card-title dark-bg">Order Book</h2>
+				<h2 className="card-title">Order Book</h2>
 				<div className="clearfix"></div>
-				<table className="table l-g-table">
+				<Table table className="l-g-table">
 					<thead>
 						<tr>
 							<th>Size</th>
-							<th>Filled(BTC)</th>
+							<th>Filled</th>
 							<th>Price</th>
 							<th>Time</th>
 							<th>Status</th>
@@ -24,28 +25,42 @@ export class OrderTable extends React.Component {
 					</thead>
 					<tbody>
 						<tr>
-							<td>1</td>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>sd</td>
-							<td>@mdo</td>
+							<td>10</td>
+							<td>filled</td>
+							<td>120</td>
+							<td>12:00</td>
+							<td>pending</td>
 						</tr>
 						<tr>
-							<td>2</td>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>sd</td>
-							<td>@fat</td>
+							<td>10</td>
+							<td>filled</td>
+							<td>120</td>
+							<td>12:00</td>
+							<td>pending</td>
 						</tr>
 						<tr>
-							<td>3</td>
-							<td>Larry the Bird</td>
-							<td>@twitter</td>
-							<td>@twitter</td>
-							<td>sd</td>
+							<td>10</td>
+							<td>filled</td>
+							<td>120</td>
+							<td>12:00</td>
+							<td>pending</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>filled</td>
+							<td>120</td>
+							<td>12:00</td>
+							<td>pending</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>filled</td>
+							<td>120</td>
+							<td>12:00</td>
+							<td>pending</td>
 						</tr>
 					</tbody>
-				</table>
+				</Table>
 			</div>
 		);
   }

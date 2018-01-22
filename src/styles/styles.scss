@@ -176,12 +176,16 @@ body{
     display: inline-block;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
+    border: 0px;
+    border-radius: 3px;
+    text-shadow: none;
     background: rgba(255, 255, 255, 0.15);
     color: rgba(255, 255, 255, .5);
     text-transform:uppercase;
     transition: all .5s;
     font-size: 12px;
     outline: none !important;
+    box-shadow: none;
     &:hover {
         background: rgba(255, 255, 255, 0.25);
         color: #fff; 
@@ -248,7 +252,13 @@ body{
 }
 .form-input-group {
     position: relative;
-    input {}
+    input {
+        box-shadow: none;
+        border-radius: 0;
+        &:hover, &:focus {
+            box-shadow: none;
+        }
+    }
     span {
         position: absolute;
         right: 5px;
@@ -279,6 +289,8 @@ body{
 
 .content {
     position: relative;
+    height: 60vh;
+    overflow: hidden;
 }
 .content [class*=col-] {
     float: left;
@@ -349,6 +361,7 @@ body{
 }
 
 .card-panel-header {
+    width: 100%;
     background: #15232c;
     border-bottom: 1px solid rgba(255, 255, 255, .25);
     transition: all .25s;
@@ -360,13 +373,24 @@ body{
         font-family: "Open Sans", sans-serif;
         font-size: 11px;
         color: rgba(255, 255, 255, .5);
+    }
+}
+.card-panel-header.col-w-3 {
+    label {
+        width: 33%;
+    }
+}
+
+.card-panel-header.col-w-4 {
+    label {
         width: 25%;
     }
 }
 
 .card-panel-body {
     position: relative;
-    height: calc(100vh - 120px);
+    width: 100%;
+    height: calc(60vh - 80px);
     overflow: auto;
     border-left: 1px solid rgba(0, 0, 0, .5);
     .card-panel-body-rows {
@@ -380,7 +404,6 @@ body{
             font-size: 10px;
             color: rgba(255, 255, 255, .7);
             text-align: right;
-            width: 25%;
         }
         span.up {
             position: relative;
@@ -433,6 +456,24 @@ body{
         }
     }
 }
+
+.card-panel-body.col-w-3 {
+    .card-panel-body-rows {
+        span {
+            width: 33%;
+        }
+    }
+}
+
+.card-panel-body.col-w-4 {
+    .card-panel-body-rows {
+        span {
+            width: 25%;
+        }
+    }
+}
+
+
 
 .card.card-fh {
     max-height: calc(100vh - 50px);
@@ -494,43 +535,13 @@ body{
 
 .order-news-section {
     position: relative;
-    background: #2f3d45;
+    background: #15232C;
     width: 100%;
+    height: calc(40vh - 60px);
+    overflow: auto;
 }
 .dark-bg {
     background: rgba(0, 0, 0, .25);
-}
-.l-g-table {
-    border-right: 1px solid rgba(0, 0, 0, .2);
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-}
-.table.l-g-table tr td, .table.l-g-table th {
-    border-width: 1px;
-    border-color: rgba(255, 255, 255, .3) !important;
-}
-.btc-news {
-    border-left: 1px solid #2c2c2c;
-    margin-left: -1px;
-}
-.card-news {
-    border-bottom: 1px solid rgba(255, 255, 255, .25);
-    i {
-        font-size: 40px;
-        color: rgba(255, 255, 255, .5);
-    }
-    p {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-        color: rgba(255, 255, 255, .7);
-        padding: 10px 0;
-        margin: 0;
-    }
-    cursor: pointer;
-    transition: all .25s;
-    &:hover {
-        background: rgba(0, 0, 0, .2);
-    }
 }
 
 @media(max-width: 768px) {

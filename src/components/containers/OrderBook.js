@@ -81,13 +81,13 @@ export class OrderBook extends React.Component {
 		  <div className="card card-fh">
 				<div className="card-fixed-header">
 					<h2 onClick="{this.handleCardClick}" className="card-title" data-card="orderbook">Order Book</h2>
-					<div className="card-panel-header">
+					<div className="card-panel-header col-w-3">
 						<label>Market Size</label>
 						<label>Price({ this.props.currentPair.unit2 })</label>
 						<label>Exchange</label>
 					</div>
 				</div>
-				<div className="card-panel-body">
+				<div className="card-panel-body col-w-3">
 
 					{this.props.orderBook.active.map((object, i) => (
 						<div className="card-panel-body-rows">

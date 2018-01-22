@@ -2,25 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {Grid, Row, Col } from 'react-bootstrap';
-import * as actions from '../../actions/fuelSavingsActions';
+import {Grid, Row, Col, Image } from 'react-bootstrap';
+import '../../styles/NewsBox.scss';
+import * as actions from '../../actions/orderBookActions';
 
 export class OrderTable extends React.Component {
 
   render() {
 		return (
 			<div>
-				<h2 className="card-title dark-bg">News BTC</h2>
+				<h2 className="card-title">News BTC</h2>
 				<div className="clearfix"></div>
 				<div className="btc-news">
 					<div className="card-news">
 						<Row className="no-gutters">
 							<Col md={2} className="text-center">
-								<i className="mdi mdi-image"></i>
+								<Image src="https://i.pinimg.com/236x/30/50/80/3050803135277ac1e153cc6aaeef796a--tech-news-first-time.jpg" className="news-thumbnail" responsive />
 							</Col>
 							<Col md={10}>
 								<p className="p-text">
-									Lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl 
+									How To Save on Bitcoin's Soaring Fees.
 								</p>
 							</Col>
 						</Row>
@@ -28,11 +29,11 @@ export class OrderTable extends React.Component {
 					<div className="card-news">
 						<Row className="no-gutters">
 							<Col md={2} className="text-center">
-								<i className="mdi mdi-image"></i>
+								<Image src="http://wire.kapitall.com/wp-content/image-import/ThinkstockPhotos-522646895-200x150.jpg" className="news-thumbnail" responsive />
 							</Col>
 							<Col md={10}>
 								<p className="p-text">
-									Lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl 
+									Bitcoin broker Coinbase booked $1 billion in revenue last year — so the company has told hovering VCs to back off
 								</p>
 							</Col>
 						</Row>
@@ -40,11 +41,11 @@ export class OrderTable extends React.Component {
 					<div className="card-news">
 						<Row className="no-gutters">
 							<Col md={2} className="text-center">
-								<i className="mdi mdi-image"></i>
+								<Image src="https://images.jagran.com/naidunia/bitcoin_plunge_2018118_154733_18_01_2018_m.jpg" className="news-thumbnail" responsive />
 							</Col>
 							<Col md={10}>
 								<p className="p-text">
-									Lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl 
+									Japan bitcoin bourse group stages Europe expansions
 								</p>
 							</Col>
 						</Row>
@@ -52,11 +53,11 @@ export class OrderTable extends React.Component {
 					<div className="card-news">
 						<Row className="no-gutters">
 							<Col md={2} className="text-center">
-								<i className="mdi mdi-image"></i>
+								<Image src="http://img.timesnownews.com/story/1514462803-bitcoin_new.jpg?d=200x150" className="news-thumbnail" responsive />
 							</Col>
 							<Col md={10}>
 								<p className="p-text">
-									Lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl lorem iprm adckjaskl cjs kcdsl 
+									Bitcoin To Drop As Low As $1000 This Year, Wall Street CIO Predicts
 								</p>
 							</Col>
 						</Row>

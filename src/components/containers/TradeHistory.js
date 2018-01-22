@@ -12,14 +12,14 @@ export class TradeHistory extends React.Component {
 		  <div className="card card-fh">
 		  	<div className="card-fixed-header">
 					<h2 className="card-title" data-card="tradehistory" onClick={this.handleCardClick}>Trade History</h2>
-					<div className="card-panel-header">
+					<div className="card-panel-header col-w-4">
 						<label>Total Size</label>
 						<label>Price({ this.props.currentPair.unit2 })</label>
 						<label>Time</label>
 						<label>Exchange</label>
 					</div>
 				</div>
-				<div className="card-panel-body">
+				<div className="card-panel-body col-w-4">
 					<div className="card-panel-body-rows">
 						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>

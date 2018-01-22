@@ -1,0 +1,26 @@
+.btc-news {
+    border-left: 1px solid #4c4c4c;
+    margin-left: -1px;
+}
+.card-news {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    i {
+        font-size: 40px;
+        color: rgba(255, 255, 255, .5);
+    }
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: rgba(255, 255, 255, .7);
+        padding: 10px 0;
+        margin: 0;
+    }
+    cursor: pointer;
+    transition: all .25s;
+    &:hover {
+        background: rgba(0, 0, 0, .2);
+    }
+}
+.news-thumbnail {
+    padding: 10px;
+}

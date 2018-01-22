@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {Grid, Row, Col, DropdownButton, MenuItem } from 'react-bootstrap';
+import {Grid, Row, Col, DropdownButton, MenuItem, Button, FormGroup, FieldGroup, FormControl, ControlLabel } from 'react-bootstrap';
 import * as actions from '../../actions/orderFormActions';
 
 export class OrderForm extends React.Component {
@@ -14,7 +14,6 @@ export class OrderForm extends React.Component {
     handleBuySellToggle = () => {
         this.props.actions.toggleBuySellOrderForm();
     };
-
 
     handleExchangeSelection = (value) => {
         this.props.actions.updateOrderFormExchange( value );
@@ -34,29 +33,35 @@ export class OrderForm extends React.Component {
 						</ul>
 						<div className="clearfix"></div><br />
 						<div className="tab-content">
-							<button onClick={this.handleBuySellToggle} className={(this.props.orderForm.isBuy ? 'primary' : '') + " btn hw" } >Buy</button>
-							<button onClick={this.handleBuySellToggle} className={(!this.props.orderForm.isBuy ? 'secondary' : '') + " btn hw" } >Sell</button>
+							<Button onClick={this.handleBuySellToggle} className={(this.props.orderForm.isBuy ? 'primary' : '') + " btn hw" } >Buy</Button>
+							<Button onClick={this.handleBuySellToggle} className={(!this.props.orderForm.isBuy ? 'secondary' : '') + " btn hw" } >Sell</Button>
 							<div className="clearfix"></div><br />
-							<small className="lbl-sm">Amount</small>
-							<div className="form-input-group">
-								<input type="text" className="form-input" value={this.props.orderForm.buyAmount} placeholder="0.00" />
-								<span>{ !this.props.orderForm.isBuy || this.props.orderForm.activeTab == 'limit' ? this.props.currentPair.unit1 : this.props.currentPair.unit2 }</span>
-							</div>
+							<FormGroup>
+								<ControlLabel className="lbl-sm">Amount</ControlLabel>
+								<div className="form-input-group">
+									<FormControl type="text" placeholder="0.00" className="form-input" value={this.props.orderForm.buyAmount} />
+									<span>{ !this.props.orderForm.isBuy || this.props.orderForm.activeTab == 'limit' ? this.props.currentPair.unit1 : this.props.currentPair.unit2 }</span>
+								</div>
+							</FormGroup>
 							<div className="clearfix"></div><br />
 							<div className={(this.props.orderForm.activeTab == 'limit' ? 'show' : 'hide')}>
-								<small className="lbl-sm">Limit Price</small>
-								<div className="form-input-group">
-									<input type="text" value={ this.props.orderForm.limitPrice } className="form-input" placeholder="0.00" />
-									<span>{ this.props.currentPair.unit2 }</span>
-								</div>
+								<FormGroup>
+									<ControlLabel className="lbl-sm">Limit Price</ControlLabel>
+									<div className="form-input-group">
+										<FormControl type="text" placeholder="0.00" className="form-input" value={ this.props.orderForm.limitPrice } />
+										<span>{ this.props.currentPair.unit2 }</span>
+									</div>
+								</FormGroup>
 								<div className="clearfix"></div><br />
 							</div>
-							<div className={(this.props.orderForm.activeTab == 'stop' ? 'show' : 'hide')}>
-								<small className="lbl-sm">Stop Price</small>
-								<div className="form-input-group">
-									<input type="text" className="form-input" placeholder="0.00" />
-									<span>{ this.props.currentPair.unit2 }</span>
-								</div>
+							<div className={(this.props.orderForm.activeTab == 'stop' ? 'show' : 'hide')}>								
+								<FormGroup>
+									<ControlLabel className="lbl-sm">Stop Price</ControlLabel>
+									<div className="form-input-group">
+										<FormControl type="text" placeholder="0.00" className="form-input" value={ this.props.orderForm.limitPrice } />
+										<span>{ this.props.currentPair.unit2 }</span>
+									</div>
+								</FormGroup>
 								<div className="clearfix"></div><br />
 							</div>
 							<div className="sep-line"></div>
@@ -80,7 +85,7 @@ export class OrderForm extends React.Component {
                                 </div>
 							</div>
 							<div className="clearfix"></div><br />
-							<button className={( this.props.orderForm.isBuy ? 'primary' : 'secondary' ) + " btn block" } >Place Buy Order</button>
+							<Button className={( this.props.orderForm.isBuy ? 'primary' : 'secondary' ) + " btn block" } onClick={this.handleOrders}>Place Buy Order</Button>
 						</div>
 						<br />
 					</div>
