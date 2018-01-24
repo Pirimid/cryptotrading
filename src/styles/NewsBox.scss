@@ -24,3 +24,16 @@
 .news-thumbnail {
     padding: 10px;
 }
+
+.news-item{
+    padding: 10px;
+    a{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: rgba(255, 255, 255, .7);
+        &:hover{
+            color: rgba(255, 255, 255, .7);
+            text-decoration:none;
+        }
+    }
+}

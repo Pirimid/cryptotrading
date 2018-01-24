@@ -9,7 +9,7 @@ import OrderBook from './containers/OrderBook';
 import TradeHistory from './containers/TradeHistory';
 
 import OrderTable from './containers/OrderTable';
-import NewsBtc from './containers/NewsBtc';
+import NewsSection from './containers/NewsSection';
 
 import {Grid, Row, Col } from 'react-bootstrap';
 
@@ -64,7 +64,7 @@ class App extends React.Component {
 					<OrderTable />
 				</Col>
 				<Col md={4}>
-					<NewsBtc />
+					<NewsSection />
 				</Col>
 			</Row>
 		</div>
