@@ -44,52 +44,7 @@ export class TradeHistory extends React.Component {
 						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
 						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
 						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
@@ -125,79 +80,6 @@ export class TradeHistory extends React.Component {
 					<div className="card-panel-body-rows">
 						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div><div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div><div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
 						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
 					</div>
 					<div className="card-panel-body-rows">
