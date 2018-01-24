@@ -22,6 +22,9 @@ body{
 .p-r {
     position: relative;
 }
+.p-15 {
+    padding: 15px;
+}
 .nav-title {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -341,8 +344,13 @@ body{
 .card {
     position: relative;
     border-right: 1px solid rgba(0, 0, 0, .5);
+    .fixed-title + .card-body {
+        margin-top: 30px;
+    }
 }
 .card.card-order-form {
+    height: 60vh;
+    overflow: auto;
     background: rgba(255, 255, 255, .2);
 }
 .card-title {
@@ -473,10 +481,16 @@ body{
     }
 }
 
-
-
 .card.card-fh {
     max-height: calc(100vh - 50px);
+}
+
+.fixed-title {
+    position: fixed;
+    border-right: 1px solid rgba(0, 0, 0, .25);
+    z-index: 9;
+    min-height: 40px;
+    line-height: 40px;
 }
 
 .card-fixed-header {
@@ -538,7 +552,7 @@ body{
     background: #15232C;
     width: 100%;
     height: calc(40vh - 60px);
-    overflow: auto;
+    overflow: hidden;
 }
 .dark-bg {
     background: rgba(0, 0, 0, .25);

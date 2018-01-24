@@ -3,9 +3,18 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {Grid, Row, Col } from 'react-bootstrap';
-import * as actions from '../../actions/orderBookActions';
+import * as actions from '../../actions/tradeHistoryActions';
 
 export class TradeHistory extends React.Component {
+
+ constructor(props) {
+        super(props);
+
+        function onInterval(){
+           this.props.actions.updateTradeHistory( this.props.tradeHistory[Math.floor(Math.random() * 4)]);
+        }
+        setInterval( onInterval.bind(this) , 700);
+    }
 
   render() {
 		return (
@@ -20,77 +29,15 @@ export class TradeHistory extends React.Component {
 					</div>
 				</div>
 				<div className="card-panel-body col-w-4">
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div><div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="up arrow">9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span className="down arrow">9830.17</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
 
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div><div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
-					<div className="card-panel-body-rows">
-						<span>0.01879837</span><span>9830.50</span><span>12:13:37</span><span>exachange</span>
-					</div>
+                    {this.props.tradeHistory.active.map((object, i) => (
+						<div className="card-panel-body-rows">
+							<span >{object.tradeSize}</span>
+							<span className={ ( object.up ? "up " : "down " ) + "arrow"}>{object.price}</span>
+							<span>{object.time}</span>
+							<span>{object.exchange}</span>
+						</div>))}
+
 				</div>
 			</div>
 		);
@@ -99,7 +46,8 @@ export class TradeHistory extends React.Component {
 
 function mapStateToProps(state) {
   return {
-	currentPair: state.currentPair
+	currentPair: state.currentPair,
+	tradeHistory: state.tradeHistory
   };
 }
 

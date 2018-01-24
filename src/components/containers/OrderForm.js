@@ -22,9 +22,11 @@ export class OrderForm extends React.Component {
 
   render() {
 		return (
-		  	<div className="card card-order-form">
-				<h2 className="card-title" data-card="orderform" >Order Form</h2>
-				<div className="card-body">
+		  	<div className="card card-fh card-order-form">
+		  		<div className="card-fixed-header">
+					<h2 className="card-title" data-card="orderform" >Order Form</h2>
+				</div>
+				<div className="card-panel-body p-15">
 					<div className="tabs">
 						<ul className="tab-header-list">
 							<li onClick={this.handleTabClick} data-tab='market' className={(this.props.orderForm.activeTab == 'market' ? 'active' : '')} >Market</li>
