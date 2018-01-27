@@ -2,7 +2,7 @@ export default {
     currentPair : {
         unit1 : 'BTC',
         unit2 : 'USD',
-        lastTradePrice : 14250.01,
+        lastTradePrice : 1000.01,
         last24HourVolume : 16681,
         last24HourPrice :-6.35
     },
@@ -57,6 +57,9 @@ export default {
         limitPrice : 0,
         exchange : 'GDAX'
     },
+    orderTable : [
+
+    ],
     orderBook : {
     active :
         [

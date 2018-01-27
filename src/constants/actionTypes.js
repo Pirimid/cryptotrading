@@ -9,3 +9,5 @@ export const TOGGLE_BUY_SELL_ORDER_FORM = 'TOGGLE_BUY_SELL_ORDER_FORM';
 export const UPDATE_TRADE_HISTORY = 'UPDATE_TRADE_HISTORY';
 // header actions
 export const UPDATE_CURRENCY_PAIR = 'UPDATE_CURRENCY_PAIR';
+// order Table
+export const ADD_ORDER = 'ADD_ORDER';

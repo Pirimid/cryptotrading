@@ -17,41 +17,29 @@ export class OrderTable extends React.Component {
 					<thead>
 						<tr>
 							<th>Size</th>
-							<th>Filled</th>
-							<th>Price</th>
+							<th>Filled({this.props.currentPair.unit1})</th>
+							<th>Price({this.props.currentPair.unit2})</th>
 							<th>Time</th>
 							<th>Status</th>
+							<th>Side</th>
+							<th>Exchange</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>10</td>
-							<td>filled</td>
-							<td>120</td>
-							<td>12:00</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>10</td>
-							<td>filled</td>
-							<td>120</td>
-							<td>12:00</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>10</td>
-							<td>filled</td>
-							<td>120</td>
-							<td>12:00</td>
-							<td>pending</td>
-						</tr>
-						<tr>
-							<td>10</td>
-							<td>filled</td>
-							<td>120</td>
-							<td>12:00</td>
-							<td>pending</td>
-						</tr>
+					    { this.props.orderTable.length > 0 ?
+                        (this.props.orderTable.map((object, i) => (
+                            <tr key={i} >
+                                <td >{object.size}</td>
+                                <td >{object.filled}</td>
+                                <td >{object.price}</td>
+                                <td >{object.time}</td>
+                                <td >{object.status}</td>
+                                <td >{object.side}</td>
+                                <td >{object.exchange}</td>
+                            </tr>
+                        ))) : <tr><td colSpan="7" className="padding-top-50 text-align-center">You have no orders</td></tr> }
+
+
 					</tbody>
 				</Table>
 			</div>
@@ -66,7 +54,8 @@ OrderTable.propTypes = {
 
 function mapStateToProps(state) {
   return {
-	currentPair: state.currentPair
+	currentPair: state.currentPair,
+	orderTable: state.orderTable
   };
 }
 

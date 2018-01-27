@@ -7,6 +7,10 @@ import * as actions from '../../actions/orderFormActions';
 
 export class OrderForm extends React.Component {
 
+    state = {
+        disableSubmit : false
+    }
+
     handleTabClick = (event) => {
         this.props.actions.updateOrderFormTab( event.target.getAttribute('data-tab') );
     };
@@ -17,6 +21,50 @@ export class OrderForm extends React.Component {
 
     handleExchangeSelection = (value) => {
         this.props.actions.updateOrderFormExchange( value );
+    };
+
+    handleAmountChange = (event) => {
+        let parsedValue = parseFloat(event.target.value);
+        this.setState({ disableSubmit : false })
+        if( isNaN(parsedValue)  ) {
+            parsedValue = 0;
+        }
+
+        let orderDetails = {
+          buyAmount : parsedValue,
+        };
+
+        if( this.props.orderForm.activeTab === 'market' ) {
+            let buySize;
+            if( this.props.orderForm.isBuy ) {
+                buySize = parsedValue / this.props.currentPair.lastTradePrice;
+            } else {
+                buySize = parsedValue * this.props.currentPair.lastTradePrice;
+            }
+            orderDetails.buySize = buySize;
+        }
+
+        this.props.actions.updateOrderForm( orderDetails );
+    };
+
+    placeOrder = () => {
+        if( !this.props.orderForm.buyAmount ) {
+            this.setState({ disableSubmit : true })
+            return;
+        }
+
+        let now = new Date();
+        let time = now.getHours() + ":" +  now.getMinutes() + ":" + now.getSeconds()
+        let order = {
+            size: this.props.orderForm.buySize,
+            filled: "Executed",
+            price: this.props.orderForm.buyAmount,
+            time: time,
+            status: "Executed",
+            side: "Buy",
+            exchange: this.props.orderForm.exchange
+        }
+        this.props.actions.placeOrder( order );
     };
 
 
@@ -41,7 +89,7 @@ export class OrderForm extends React.Component {
 							<FormGroup>
 								<ControlLabel className="lbl-sm">Amount</ControlLabel>
 								<div className="form-input-group">
-									<FormControl type="text" placeholder="0.00" className="form-input" value={this.props.orderForm.buyAmount} />
+									<FormControl onChange={this.handleAmountChange} type="text" placeholder="0.00" className="form-input" value={this.props.orderForm.buyAmount} />
 									<span>{ !this.props.orderForm.isBuy || this.props.orderForm.activeTab == 'limit' ? this.props.currentPair.unit1 : this.props.currentPair.unit2 }</span>
 								</div>
 							</FormGroup>
@@ -87,7 +135,7 @@ export class OrderForm extends React.Component {
                                 </div>
 							</div>
 							<div className="clearfix"></div><br />
-							<Button className={( this.props.orderForm.isBuy ? 'primary' : 'secondary' ) + " btn block" } onClick={this.handleOrders}>Place Buy Order</Button>
+							<Button disabled={this.state.disableSubmit} onClick={this.placeOrder} className={( this.props.orderForm.isBuy ? 'primary' : 'secondary' ) + " btn block" } >Place {( this.props.orderForm.isBuy ? 'Buy' : 'Sell' )} Order</Button>
 						</div>
 						<br />
 					</div>
