@@ -13,7 +13,7 @@ export class OrderTable extends React.Component {
 			<div>
 				<h2 className="card-title fixed-title col-md-8">Orders</h2>
 				<div className="clearfix"></div>
-				<Table table className="l-g-table">
+				<Table className="l-g-table">
 					<thead>
 						<tr>
 							<th>Size</th>

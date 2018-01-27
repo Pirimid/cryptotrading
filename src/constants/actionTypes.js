@@ -7,3 +7,5 @@ export const UPDATE_ORDER_FORM = 'UPDATE_ORDER_FORM';
 export const TOGGLE_BUY_SELL_ORDER_FORM = 'TOGGLE_BUY_SELL_ORDER_FORM';
 // transaction history
 export const UPDATE_TRADE_HISTORY = 'UPDATE_TRADE_HISTORY';
+// header actions
+export const UPDATE_CURRENCY_PAIR = 'UPDATE_CURRENCY_PAIR';

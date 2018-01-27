@@ -31,7 +31,7 @@ export class TradeHistory extends React.Component {
 				<div className="card-panel-body col-w-4">
 
                     {this.props.tradeHistory.active.map((object, i) => (
-						<div className="card-panel-body-rows">
+						<div key={i} className="card-panel-body-rows">
 							<span >{object.tradeSize}</span>
 							<span className={ ( object.up ? "up " : "down " ) + "arrow"}>{object.price}</span>
 							<span>{object.time}</span>

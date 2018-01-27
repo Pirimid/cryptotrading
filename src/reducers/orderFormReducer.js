@@ -14,12 +14,15 @@ export default function orderFormReducer(state = initialState.orderForm, action)
             buySize : (state.isBuy ? 0.00000000 : 0.00)
         }
         return objectAssign({}, state, newState );
+        break;
 
     case types.UPDATE_ORDER_FORM_EXCHANGE:
         return objectAssign({}, state, { 'exchange' : action.payload  } );
+        break;
 
     case types.UPDATE_ORDER_FORM:
         return objectAssign({}, state, action.payload );
+        break;
 
     case types.TOGGLE_BUY_SELL_ORDER_FORM:
         newState = {
@@ -28,6 +31,7 @@ export default function orderFormReducer(state = initialState.orderForm, action)
             isBuy : !state.isBuy
         }
         return objectAssign({}, state, newState );
+        break;
 
     default:
       return state;

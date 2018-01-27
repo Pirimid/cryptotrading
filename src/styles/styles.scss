@@ -398,7 +398,7 @@ body{
 .card-panel-body {
     position: relative;
     width: 100%;
-    height: calc(60vh - 80px);
+    height: calc(60vh - 8px);
     overflow: auto;
     border-left: 1px solid rgba(0, 0, 0, .5);
     .card-panel-body-rows {

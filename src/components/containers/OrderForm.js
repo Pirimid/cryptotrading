@@ -81,7 +81,7 @@ export class OrderForm extends React.Component {
 								<div className="pull-right">
                                     <DropdownButton pullRight title={this.props.orderForm.exchange} id="exchange-selection-dropdown">
                                         {this.props.appData.exchanges.map((object, i) => (
-                                            <MenuItem onSelect={this.handleExchangeSelection} eventKey={object}>{object}</MenuItem>
+                                            <MenuItem key={i} onSelect={this.handleExchangeSelection} eventKey={object}>{object}</MenuItem>
                                         ))}
                                     </DropdownButton>
                                 </div>

@@ -78,7 +78,7 @@ render() {
   return (
     <div className="card card-fh">
     <div className="card-fixed-header">
-    <h2 onClick="{this.handleCardClick}" className="card-title" data-card="orderbook">Order Book</h2>
+    <h2 className="card-title" data-card="orderbook">Order Book</h2>
     <div className="card-panel-header col-w-3">
     <label>Market Size</label>
     <label>Price({ this.props.currentPair.unit2 })</label>
@@ -88,7 +88,7 @@ render() {
     <div className="card-panel-body col-w-3">
 
     {this.props.orderBook.active.map((object, i) => (
-      <div className="card-panel-body-rows">
+      <div key={i} className="card-panel-body-rows">
       <span onClick={this.handleMarketSizeClick(object)} >{getFormattedNumber(object.marketSize)}</span>
       <span onClick={this.handlePriceClick(object)} className="down">{object.price}</span>
       <span>{object.exchange}</span>
@@ -100,7 +100,7 @@ render() {
     </div>
 
     {this.props.orderBook.active.map((object, i) => (
-      <div className="card-panel-body-rows">
+      <div key={i} className="card-panel-body-rows">
       <span onClick={this.handleSpreadMarketSizeClick(object)} >{getFormattedNumber(object.marketSize)}</span>
       <span onClick={this.handleSpreadPriceClick(object)} className="up">{object.price}</span>
       <span>{object.exchange}</span>
