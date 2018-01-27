@@ -176,7 +176,13 @@ export default {
             { tradeSize : 0.05579837 , up : true, price : 11232.123356, time : '22:21:50', exchange : 'GDAX' },
             { tradeSize : 0.01279837 , up : true, price : 11230.123356, time : '22:21:10', exchange : 'Bitfinex' },
             { tradeSize : 0.13879837 , up : true, price : 11228.123356, time : '22:21:06', exchange : 'Krakan' },
-            { tradeSize : 0.01279837 , up : false, price : 11225.123356, time : '22:21:01', exchange : 'Bittrex' }
+            { tradeSize : 0.01279837 , up : false, price : 11225.123356, time : '22:21:01', exchange : 'Bittrex' },
+            { tradeSize : 1.11879000 , up : true, price : 11236.123356, time : '22:20:30', exchange : 'Bitfinex' },
+            { tradeSize : 0.02279837 , up : false, price : 11111.123356, time : '22:20:07', exchange : 'GDAX' },
+            { tradeSize : 0.15579837 , up : true, price : 11139.123356, time : '22:19:50', exchange : 'HitBTC' },
+            { tradeSize : 9.91279837 , up : true, price : 11134.123356, time : '22:19:10', exchange : 'Bitfinex' },
+            { tradeSize : 0.13879837 , up : true, price : 11123.123356, time : '22:19:06', exchange : 'Krakan' },
+            { tradeSize : 0.01279837 , up : false, price : 11111.123356, time : '22:19:01', exchange : 'Bittrex' }
         ],
         1 : [
             { tradeSize : 0.02279837 , up : false, price : 11210.123356, time : '42:29:50', exchange : 'Bittrex' },
@@ -188,15 +194,26 @@ export default {
             { tradeSize : 3.05579837 , up : true, price : 11242.123356, time : '42:23:30', exchange : 'GDAX' },
             { tradeSize : 0.01279837 , up : true, price : 11230.123356, time : '42:23:20', exchange : 'Bitfinex' },
             { tradeSize : 0.13879837 , up : true, price : 11228.123356, time : '42:22:50', exchange : 'Krakan' },
-            { tradeSize : 0.01879000 , up : false, price : 11209.123356, time : '42:21:56', exchange : 'Binance' },             { tradeSize : 0.02279837 , up : true, price : 1235.123356, time : '22:26:40', exchange : 'CEX.IO' },
+            { tradeSize : 0.01879000 , up : false, price : 11209.123356, time : '42:21:56', exchange : 'Binance' },
+            { tradeSize : 0.02279837 , up : true, price : 1235.123356, time : '22:26:40', exchange : 'CEX.IO' },
             { tradeSize : 0.01279837 , up : false, price : 11235.123356, time : '42:21:41', exchange : 'GDAX' },
             { tradeSize : 0.01879000 , up : true, price : 11236.123356, time : '42:20:30', exchange : 'Binance' },
-            { tradeSize : 1.01279837 , up : false, price : 11225.123356, time : '42:19:48', exchange : 'Bittrex' },              { tradeSize : 0.13879837 , up : false, price : 1230.123356, time : '22:25:47', exchange : 'HitBTC' },
+            { tradeSize : 1.01279837 , up : false, price : 11225.123356, time : '42:19:48', exchange : 'Bittrex' },
+            { tradeSize : 0.13879837 , up : false, price : 1230.123356, time : '22:25:47', exchange : 'HitBTC' },
             { tradeSize : 0.13879837 , up : true, price : 11228.123356, time : '42:19:06', exchange : 'Krakan' },
             { tradeSize : 0.01279837 , up : false, price : 11225.123356, time : '42:19:01', exchange : 'Bittrex' },
             { tradeSize : 0.01279837 , up : false, price : 11230.123356, time : '42:17:10', exchange : 'Bitfinex' },
             { tradeSize : 3.02279837 , up : false, price : 11235.123356, time : '42:16:50', exchange : 'GDAX' },
             { tradeSize : 0.05579837 , up : true, price : 11244.123356, time : '42:11:50', exchange : 'GDAX' },
+            { tradeSize : 1.11879000 , up : true, price : 11211.123356, time : '42:10:33', exchange : 'Krakan' },
+            { tradeSize : 0.02279837 , up : false, price : 11100.123356, time : '42:10:17', exchange : 'GDAX' },
+            { tradeSize : 7.15579837 , up : true, price : 11190.123356, time : '42:10:11', exchange : 'HitBTC' },
+            { tradeSize : 0.91279837 , up : true, price : 11140.123356, time : '42:10:10', exchange : 'Bitfinex' },
+            { tradeSize : 6.13878837 , up : true, price : 11130.123356, time : '42:9:56', exchange : 'Krakan' },
+            { tradeSize : 0.01279837 , up : false, price : 11111.3356, time : '42:9:21', exchange : 'GDAX' }
+
+
+
         ],
         2 : [
             { tradeSize : 0.05579837 , up : false, price : 11256.123356, time : '32:28:50', exchange : 'Bitfinex' },
@@ -218,7 +235,14 @@ export default {
             { tradeSize : 3.02279837 , up : true, price : 11255.123356, time : '32:16:50', exchange : 'GDAX' },
             { tradeSize : 0.05579837 , up : false, price : 11252.3356, time : '32:16:30', exchange : 'GDAX' },
             { tradeSize : 0.13879837 , up : true, price : 11258.123356, time : '32:16:06', exchange : 'Krakan' },
-            { tradeSize : 1.01279837 , up : false, price : 11255.123356, time : '32:16:01', exchange : 'Bittrex' }
+            { tradeSize : 1.01279837 , up : false, price : 11255.123356, time : '32:16:01', exchange : 'Bittrex' },
+            { tradeSize : 1.11879000 , up : true, price : 11300.123356, time : '32:10:33', exchange : 'Krakan' },
+            { tradeSize : 3.02279837 , up : false, price : 11400.123356, time : '32:10:17', exchange : 'GDAX' },
+            { tradeSize : 3.15579837 , up : true, price : 11500.123356, time : '32:10:11', exchange : 'CEX.IO' },
+            { tradeSize : 0.91279837 , up : true, price : 11400.123356, time : '32:10:10', exchange : 'Bitfinex' },
+            { tradeSize : 2.13878837 , up : false, price : 11300.123356, time : '32:9:56', exchange : 'CEX.IO' },
+            { tradeSize : 2.01279837 , up : false, price : 11366.3356, time : '32:9:21', exchange : 'GDAX' }
+
         ],
         3 : [
             { tradeSize : 0.01879000, up : true, price : 11198.123356, time : '52:29:50', exchange : 'Bitfinex' },
@@ -240,7 +264,13 @@ export default {
             { tradeSize : 0.05579837 , up : true, price : 11212.123356, time : '52:21:50', exchange : 'Krakan' },
             { tradeSize : 0.01279837 , up : false, price : 11210.123356, time : '52:19:10', exchange : 'Bitfinex' },
             { tradeSize : 0.13879837 , up : true, price : 11228.123356, time : '52:16:06', exchange : 'HitBTC' },
-            { tradeSize : 2.01279837 , up : false, price : 11205.123356, time : '52:11:01', exchange : 'GDAX' }
+            { tradeSize : 2.01279837 , up : false, price : 11205.123356, time : '52:11:01', exchange : 'GDAX' },
+            { tradeSize : 2.11879000 , up : false, price : 11344.123356, time : '52:10:44', exchange : 'Krakan' },
+            { tradeSize : 3.02279837 , up : true, price : 11354.123356, time : '52:10:22', exchange : 'HitBTC' },
+            { tradeSize : 4.15579837 , up : false, price : 11233.123356, time : '52:10:09', exchange : 'HitBTC' },
+            { tradeSize : 1.91279837 , up : false, price : 11278.123356, time : '52:07:17', exchange : 'GDAX' },
+            { tradeSize : 0.13878837 , up : true, price : 11654.123356, time : '52:04:26', exchange : 'HitBTC' },
+            { tradeSize : 0.01279837 , up : false, price : 11432.3356, time : '52:04:21', exchange : 'Krakan' }
         ],
         0 : [
             { tradeSize : 0.01879000, up : true, price : 11227.123356, time : '22:29:50', exchange : 'GDAX' },
@@ -262,7 +292,13 @@ export default {
             { tradeSize : 0.05579837 , up : true, price : 11232.123356, time : '22:21:50', exchange : 'GDAX' },
             { tradeSize : 0.01279837 , up : true, price : 11230.123356, time : '22:21:10', exchange : 'Bitfinex' },
             { tradeSize : 0.13879837 , up : true, price : 11228.123356, time : '22:21:06', exchange : 'Krakan' },
-            { tradeSize : 0.01279837 , up : false, price : 11225.123356, time : '22:21:01', exchange : 'Bittrex' }
+            { tradeSize : 0.01279837 , up : false, price : 11225.123356, time : '22:21:01', exchange : 'Bittrex' },
+            { tradeSize : 1.11879000 , up : true, price : 11236.123356, time : '22:20:30', exchange : 'Bitfinex' },
+            { tradeSize : 0.02279837 , up : false, price : 11111.123356, time : '22:20:07', exchange : 'GDAX' },
+            { tradeSize : 0.15579837 , up : true, price : 11139.123356, time : '22:19:50', exchange : 'HitBTC' },
+            { tradeSize : 9.91279837 , up : true, price : 11134.123356, time : '22:19:10', exchange : 'Bitfinex' },
+            { tradeSize : 0.13879837 , up : true, price : 11123.123356, time : '22:19:06', exchange : 'Krakan' },
+            { tradeSize : 0.01279837 , up : false, price : 11111.123356, time : '22:19:01', exchange : 'Bittrex' }
         ],
     }
 
