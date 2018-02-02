@@ -1,4 +1,6 @@
 @import 'header';
+@import 'orderTable';
+@import 'newsSection';
 
 * {
     box-sizing: border-box;
@@ -38,6 +40,9 @@ body{
 }
 .nav-title.green {
     color: #4da53c;
+}
+.nav-title.red {
+    color: #ff6939;
 }
 .navlogo {
     font-family: "Open Sans", sans-serif;
@@ -363,7 +368,7 @@ body{
 .card-title {
     position: relative;
     margin: 0;
-    padding: 12px;
+    padding: 10px;
     background: rgb(47, 61, 69);
     font-family: "Open Sans", sans-serif;
     font-size: 15px;

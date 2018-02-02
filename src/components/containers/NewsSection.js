@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {Grid, Row, Col, Image } from 'react-bootstrap';
-import '../../styles/NewsBox.scss';
 import * as actions from '../../actions/orderBookActions';
 
 export class NewsSection extends React.Component {

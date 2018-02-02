@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {Grid, Row, Col, Table } from 'react-bootstrap';
-import '../../styles/NewTable.scss';
 import * as actions from '../../actions/orderBookActions';
 
 export class OrderTable extends React.Component {
