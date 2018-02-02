@@ -45,7 +45,7 @@ export class Header extends React.Component {
 		  </div>
 		  <div className="navItems">
 			  <div className="pair-selection">
-				  <div className="pair nav-title green">{this.props.currentPair.last24HourPrice} %</div>
+				  <div className={ (this.props.currentPair.last24HourPrice > 0 ? "green" : "red") + " pair nav-title"}>{this.props.currentPair.last24HourPrice} %</div>
 				  <div className="selection nav-sm-title">24 hour price</div>
 			  </div>
 		  </div>

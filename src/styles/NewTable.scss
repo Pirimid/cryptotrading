@@ -1,5 +1,4 @@
 .l-g-table {
-	margin-top: 40px;
     border-right: 1px solid rgba(255, 255, 255, .5);
     font-family: "Open Sans", sans-serif;
 }
@@ -9,6 +8,7 @@
     color: rgba(255, 255, 255, .7);
     font-weight: 600;
 	font-size: 12px;
+	padding: 4px;
 }
 .table.l-g-table th {
 	border-bottom: 1px solid rgba(255, 255, 255, .25);
@@ -16,4 +16,5 @@
 	font-weight: 700;
 	font-size: 13px;
 	color: rgba(255, 255, 255, .5);
+	padding: 4px;
 }

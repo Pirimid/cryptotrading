@@ -23,6 +23,15 @@ export class OrderForm extends React.Component {
         this.props.actions.updateOrderFormExchange( value );
     };
 
+    handleLimitChange = (event) => {
+        let parsedValue = parseFloat(event.target.value);
+        let orderDetails = {
+          limitPrice : parsedValue,
+          buySize : parsedValue * this.props.orderForm.buyAmount
+        };
+        this.props.actions.updateOrderForm( orderDetails );
+    }
+
     handleAmountChange = (event) => {
         let parsedValue = parseFloat(event.target.value);
         this.setState({ disableSubmit : false })
@@ -42,6 +51,10 @@ export class OrderForm extends React.Component {
                 buySize = parsedValue * this.props.currentPair.lastTradePrice;
             }
             orderDetails.buySize = buySize;
+        } else if( this.props.orderForm.activeTab === 'limit' ) {
+            let buySize;
+            buySize = parsedValue * this.props.orderForm.limitPrice;
+            orderDetails.buySize = buySize;
         }
 
         this.props.actions.updateOrderForm( orderDetails );
@@ -53,15 +66,31 @@ export class OrderForm extends React.Component {
             return;
         }
 
+        let size = this.props.orderForm.buySize;
+        let amount = this.props.orderForm.buyAmount;
+
+        if( this.props.orderForm.activeTab === 'limit' ) {
+            size = this.props.orderForm.buyAmount;
+            amount = this.props.orderForm.buySize;
+        } else if( this.props.orderForm.activeTab === 'market' ) {
+            if( this.props.orderForm.isBuy ) {
+                size = this.props.orderForm.buySize;
+                amount = this.props.orderForm.buyAmount;
+            } else {
+                size = this.props.orderForm.buyAmount;
+                amount = this.props.orderForm.buySize;
+            }
+        }
+
         let now = new Date();
         let time = now.getHours() + ":" +  now.getMinutes() + ":" + now.getSeconds()
         let order = {
-            size: this.props.orderForm.buySize,
+            size:  size,
             filled: "Executed",
-            price: this.props.orderForm.buyAmount,
+            price: amount,
             time: time,
             status: "Executed",
-            side: "Buy",
+            side: this.props.orderForm.isBuy ? "Buy" : "Sell",
             exchange: this.props.orderForm.exchange
         }
         this.props.actions.placeOrder( order );
@@ -98,7 +127,7 @@ export class OrderForm extends React.Component {
 								<FormGroup>
 									<ControlLabel className="lbl-sm">Limit Price</ControlLabel>
 									<div className="form-input-group">
-										<FormControl type="text" placeholder="0.00" className="form-input" value={ this.props.orderForm.limitPrice } />
+										<FormControl onChange={this.handleLimitChange} type="text" placeholder="0.00" className="form-input" value={ this.props.orderForm.limitPrice } />
 										<span>{ this.props.currentPair.unit2 }</span>
 									</div>
 								</FormGroup>
@@ -118,7 +147,11 @@ export class OrderForm extends React.Component {
 							<div className="clearfix">
 								<div className="pull-left">
 								    <label className="lbl-sm">Total
-								        <small>({ this.props.orderForm.isBuy ? this.props.currentPair.unit1 : this.props.currentPair.unit2 })</small>=
+								        <small>
+								            ({!this.props.orderForm.isBuy || this.props.orderForm.activeTab == 'limit' ?
+								                this.props.currentPair.unit2 : this.props.currentPair.unit1
+                                            })
+		                                </small>=
                                     </label>
                                 </div>
 								<div className="pull-right"><label className="lbl-sm">{this.props.orderForm.buySize}</label></div>

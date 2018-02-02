@@ -1,7 +1,6 @@
 .btc-news {
     overflow: auto;
     height: 32vh;
-    margin-top: 40px;
     border-left: 1px solid #4c4c4c;
     margin-left: -1px;
 }
@@ -33,6 +32,7 @@
     a{
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
+        font-size:12px;
         color: rgba(255, 255, 255, .7);
         &:hover{
             color: rgba(255, 255, 255, .7);

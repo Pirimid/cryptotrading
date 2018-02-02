@@ -11,7 +11,9 @@ export class OrderTable extends React.Component {
   render() {
 		return (
 			<div>
-				<h2 className="card-title fixed-title col-md-8">Orders</h2>
+                <div className="card-fixed-header">
+    				<h2 className="card-title ">Orders</h2>
+			    </div>
 				<div className="clearfix"></div>
 				<Table className="l-g-table">
 					<thead>
