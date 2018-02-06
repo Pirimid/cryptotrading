@@ -10,6 +10,7 @@ import TradeHistory from './containers/TradeHistory';
 
 import OrderTable from './containers/OrderTable';
 import NewsSection from './containers/NewsSection';
+import ChartsContainer from './containers/charts/ChartsContainer';
 
 import {Grid, Row, Col } from 'react-bootstrap';
 
@@ -46,10 +47,8 @@ class App extends React.Component {
 			</div>
 			<div className={(this.state.activeCard == 'orderbook' ? 'show' : '')}>
 				<div className="col-40 col-3">
-					<div className="card">
-						<h2 className="card-title">Price Chart</h2>
-					</div>
-				</div>	
+                    <ChartsContainer />
+				</div>
 			</div>
 			<div className={(this.state.activeCard == 'tradehistory' ? 'show' : '')}>
 				<div className="col-22 col-4">

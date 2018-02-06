@@ -337,6 +337,10 @@ body{
     width: 55%
 }
 
+.padding-top-10 {
+    padding-top: 10px;
+}
+
 .padding-top-50 {
     padding-top: 50px !important;
 }
@@ -600,4 +604,8 @@ body{
 
 #exchange-selection-dropdown{
     border: none;
+}
+
+.chart-bottom{
+    border-bottom:1px solid rgba(255, 255, 255, 0.25);
 }
