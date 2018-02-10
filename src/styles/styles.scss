@@ -297,7 +297,7 @@ body{
 
 .content {
     position: relative;
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
 }
 .content [class*=col-] {
@@ -365,7 +365,7 @@ body{
     }
 }
 .card.card-order-form {
-    height: 60vh;
+    height: 70vh;
     overflow: auto;
     background: rgba(255, 255, 255, .2);
 }
@@ -414,7 +414,7 @@ body{
 .card-panel-body {
     position: relative;
     width: 100%;
-    height: calc(60vh - 8px);
+    height: calc(70vh - 8px);
     overflow: auto;
     border-left: 1px solid rgba(0, 0, 0, .5);
     .card-panel-body-rows {
@@ -567,7 +567,7 @@ body{
     position: relative;
     background: #15232C;
     width: 100%;
-    height: calc(40vh - 60px);
+    height: calc(30vh - 60px);
     overflow: hidden;
 }
 .dark-bg {
@@ -608,4 +608,8 @@ body{
 
 .chart-bottom{
     border-bottom:1px solid rgba(255, 255, 255, 0.25);
+}
+
+.chart-container{
+    height:50%;
 }
