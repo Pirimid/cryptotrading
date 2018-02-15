@@ -15,7 +15,7 @@ export class OrderBook extends React.Component {
     function onInterval(){
      this.props.actions.updateOrderBook( this.props.orderBook[Math.floor(Math.random() * 4)]);
    }
-   setInterval( onInterval.bind(this) , 700);
+   setInterval( onInterval.bind(this) , 100);
  }
 
  handleMarketSizeClick = (value) => {
