@@ -1,5 +1,7 @@
 # cryptotrading
 
+Here is the [Demo](https://crypto-trading-platform.herokuapp.com/)
+
 ## Getting Started
 
 1. Install NodeJs (version 8.7.0 or above) & npm (version 5.4.2 or above)
