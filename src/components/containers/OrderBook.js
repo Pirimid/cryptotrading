@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {Grid, Row, Col } from 'react-bootstrap';
-import {getFormattedNumber} from '../../utils/formatNumbers';
 import * as actions from '../../actions/orderBookActions';
 import * as orderFormActions from '../../actions/orderFormActions';
 
@@ -89,7 +88,7 @@ render() {
 
     {this.props.orderBook.active.map((object, i) => (
       <div key={i} className="card-panel-body-rows">
-      <span onClick={this.handleMarketSizeClick(object)} >{getFormattedNumber(object.marketSize)}</span>
+      <span onClick={this.handleMarketSizeClick(object)} >{object.marketSize}</span>
       <span onClick={this.handlePriceClick(object)} className="down">{object.price}</span>
       <span>{object.exchange}</span>
       </div>))}
@@ -98,10 +97,9 @@ render() {
     <label>{ this.props.currentPair.unit2 } Spread</label>
     <label>0.47</label>
     </div>
-
     {this.props.orderBook.active.map((object, i) => (
       <div key={i} className="card-panel-body-rows">
-      <span onClick={this.handleSpreadMarketSizeClick(object)} >{getFormattedNumber(object.marketSize)}</span>
+      <span onClick={this.handleSpreadMarketSizeClick(object)} >{object.marketSize}</span>
       <span onClick={this.handleSpreadPriceClick(object)} className="up">{object.price}</span>
       <span>{object.exchange}</span>
       </div>))}

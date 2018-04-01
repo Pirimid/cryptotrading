@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsSection /> should match snapshot 1`] = `
+<div>
+  <div
+    className="card-fixed-header"
+  >
+    <h2
+      className="card-title "
+    >
+      News
+    </h2>
+  </div>
+  <div
+    className="btc-news"
+  >
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/cftc-sues-crypto-scheme-big-coin-fraud/"
+        target="_blank"
+      >
+        CFTC Sues Obscure Crypto Scheme 'My Big Coin' for Fraud
+      </a>
+    </div>
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/makerdao-quest-stable-stablecoin-continues/"
+        target="_blank"
+      >
+        MakerDAO and More: The Quest for a Stable Stablecoin Continues
+      </a>
+    </div>
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/building-a-base-bitcoin-demand-at-10k-hints-at-move-higher/"
+        target="_blank"
+      >
+        Building a Base? Bitcoin Demand at $10K Hints at Move Higher
+      </a>
+    </div>
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/stripe-to-end-support-for-bitcoin-transactions/"
+        target="_blank"
+      >
+        Payment Processor Stripe to End Support for Bitcoin
+      </a>
+    </div>
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/cftc-sues-crypto-scheme-big-coin-fraud/"
+        target="_blank"
+      >
+        CFTC Sues Obscure Crypto Scheme 'My Big Coin' for Fraud
+      </a>
+    </div>
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/makerdao-quest-stable-stablecoin-continues/"
+        target="_blank"
+      >
+        MakerDAO and More: The Quest for a Stable Stablecoin Continues
+      </a>
+    </div>
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/building-a-base-bitcoin-demand-at-10k-hints-at-move-higher/"
+        target="_blank"
+      >
+        Building a Base? Bitcoin Demand at $10K Hints at Move Higher
+      </a>
+    </div>
+    <div
+      className="news-item card-news"
+    >
+      <a
+        href="https://www.coindesk.com/stripe-to-end-support-for-bitcoin-transactions/"
+        target="_blank"
+      >
+        Payment Processor Stripe to End Support for Bitcoin
+      </a>
+    </div>
+  </div>
+</div>
+`;
