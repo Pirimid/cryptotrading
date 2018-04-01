@@ -10,8 +10,7 @@ describe('tradeHistoryActions', () => {
       type: ActionTypes.UPDATE_TRADE_HISTORY,
       payload : trade,
     };
-
-    expect(tradeHistoryActions.updateTradeHistory(currencyPair)).toEqual(expected);
+    expect(tradeHistoryActions.updateTradeHistory(trade)).toEqual(expected);
   });
 
 });

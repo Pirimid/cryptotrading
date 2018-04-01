@@ -25,15 +25,15 @@ export class Header extends React.Component {
 			  <div className="nav-dropdown">
 					<h5 className="nav-title">BITCOIN(BTC)</h5>
 					<ul className="nav-dropdown-list">
-                        {this.props.appData.availablePairs.pairCategory1.map((object, i) => (
-    						<li key={i} onClick={this.changePair(object)} >
-    						    <a >
-    						        <span>{object.unit1} / {object.unit2}</span>
-    						        <span>{object.symbolUnit2} {object.lastTradePrice}</span>
-    						        <span className={ object.last24HourPrice > 0 ? "up" : "down"}>{object.last24HourPrice}%</span>
-                                </a>
-                            </li>
-                        ))}
+						{this.props.appData.availablePairs.pairCategory1.map((object, i) => (
+							<li key={i} onClick={this.changePair(object)} >
+								<a >
+									<span>{object.unit1} / {object.unit2}</span>
+									<span>{object.symbolUnit2} {object.lastTradePrice}</span>
+									<span className={ object.last24HourPrice > 0 ? "up" : "down"}>{object.last24HourPrice}%</span>
+								</a>
+							</li>
+						))}
 					</ul>
 			  </div>
 		  </div>

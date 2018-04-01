@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+<div
+  className="nav"
+>
+  <div
+    className="navItems navlogo-container"
+  >
+    <span
+      className="navlogo"
+    >
+      Crypto Trade
+    </span>
+  </div>
+  <div
+    className="navItems pair-selection-container p-r has-dropdown"
+  >
+    <div
+      className="pair-selection"
+    >
+      <div
+        className="pair nav-title"
+      >
+        BTC
+        /
+        USD
+      </div>
+      <div
+        className="selection nav-sm-title"
+      >
+        Select product
+      </div>
+    </div>
+    <i
+      aria-hidden="true"
+      className="fa arrow fa-chevron-down"
+    />
+    <div
+      className="nav-dropdown"
+    >
+      <h5
+        className="nav-title"
+      >
+        BITCOIN(BTC)
+      </h5>
+      <ul
+        className="nav-dropdown-list"
+      >
+        <li
+          onClick={[Function]}
+        >
+          <a>
+            <span>
+              BTC
+               / 
+              USD
+            </span>
+            <span>
+              $
+               
+              11123.01
+            </span>
+            <span
+              className="down"
+            >
+              -6.35
+              %
+            </span>
+          </a>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <a>
+            <span>
+              BTC
+               / 
+              EUR
+            </span>
+            <span>
+              €
+               
+              11123.01
+            </span>
+            <span
+              className="up"
+            >
+              6.35
+              %
+            </span>
+          </a>
+        </li>
+        <li
+          onClick={[Function]}
+        >
+          <a>
+            <span>
+              BTC
+               / 
+              GBP
+            </span>
+            <span>
+              £
+               
+              11123.01
+            </span>
+            <span
+              className="down"
+            >
+              -6.35
+              %
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="navItems"
+  >
+    <div
+      className="pair-selection"
+    >
+      <div
+        className="pair nav-title"
+      >
+        11123.01
+         
+        BTC
+      </div>
+      <div
+        className="selection nav-sm-title"
+      >
+        Last trade price
+      </div>
+    </div>
+  </div>
+  <div
+    className="navItems"
+  >
+    <div
+      className="pair-selection"
+    >
+      <div
+        className="red pair nav-title"
+      >
+        -6.35
+         %
+      </div>
+      <div
+        className="selection nav-sm-title"
+      >
+        24 hour price
+      </div>
+    </div>
+  </div>
+  <div
+    className="navItems"
+  >
+    <div
+      className="pair-selection"
+    >
+      <div
+        className="pair nav-title"
+      >
+        16681
+         
+        USD
+      </div>
+      <div
+        className="selection nav-sm-title"
+      >
+        24 hour volume
+      </div>
+    </div>
+  </div>
+</div>
+`;
