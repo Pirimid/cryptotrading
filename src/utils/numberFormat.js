@@ -1,13 +1,5 @@
 import {roundNumber} from './math';
 
-export function getCurrencyFormattedNumber(value) {
-  if (value === null) {
-    return '';
-  }
-
-  return '$' + getFormattedNumber(value); // eslint-disable-line prefer-template
-}
-
 export function getFormattedNumber(value) {
   if (value === 0) {
     return 0;

@@ -56,3 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
+.idea/crypto-trading-platform.iml
+.idea/markdown-navigator.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/dictionaries/sandeep_joshi.xml
+.idea/markdown-navigator/profiles_settings.xml
