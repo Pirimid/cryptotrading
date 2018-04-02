@@ -36,12 +36,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11235.123356
@@ -54,12 +55,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11230.113344
@@ -72,12 +74,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.05579837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11230.113322
@@ -90,12 +93,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11229.113311
@@ -108,12 +112,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11222.123344
@@ -126,12 +131,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.05579837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11212.123322
@@ -144,12 +150,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11212.123316
@@ -162,12 +169,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11211.123344
@@ -180,12 +188,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.05579837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11210.123322
@@ -198,12 +207,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.01279837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11207.123312
@@ -216,12 +226,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.13879837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11204.1233
@@ -234,12 +245,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.01279837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11203.123312
@@ -252,12 +264,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.13879837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11201.1233
@@ -270,12 +283,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.01279837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11200.123312
@@ -288,12 +302,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11200.123006
@@ -306,12 +321,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="buy-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="down"
+        className="buy-price down"
         onClick={[Function]}
       >
         11200.12
@@ -335,12 +351,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11235.123356
@@ -353,12 +370,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11230.113344
@@ -371,12 +389,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.05579837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11230.113322
@@ -389,12 +408,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11229.113311
@@ -407,12 +427,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11222.123344
@@ -425,12 +446,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.05579837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11212.123322
@@ -443,12 +465,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11212.123316
@@ -461,12 +484,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11211.123344
@@ -479,12 +503,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.05579837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11210.123322
@@ -497,12 +522,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.01279837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11207.123312
@@ -515,12 +541,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.13879837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11204.1233
@@ -533,12 +560,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.01279837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11203.123312
@@ -551,12 +579,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.13879837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11201.1233
@@ -569,12 +598,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.01279837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11200.123312
@@ -587,12 +617,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.01879
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11200.123006
@@ -605,12 +636,13 @@ exports[`<OrderBook /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span
+        className="ask-size"
         onClick={[Function]}
       >
         0.02279837
       </span>
       <span
-        className="up"
+        className="ask-price up"
         onClick={[Function]}
       >
         11200.12

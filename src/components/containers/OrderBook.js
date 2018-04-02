@@ -88,9 +88,9 @@ render() {
 
     {this.props.orderBook.active.map((object, i) => (
       <div key={i} className="card-panel-body-rows">
-      <span onClick={this.handleMarketSizeClick(object)} >{object.marketSize}</span>
-      <span onClick={this.handlePriceClick(object)} className="down">{object.price}</span>
-      <span>{object.exchange}</span>
+        <span className="buy-size" onClick={this.handleMarketSizeClick(object)} >{object.marketSize}</span>
+        <span className="buy-price down" onClick={this.handlePriceClick(object)} >{object.price}</span>
+        <span>{object.exchange}</span>
       </div>))}
 
     <div className="card-panel-body-rows lbl">
@@ -99,9 +99,9 @@ render() {
     </div>
     {this.props.orderBook.active.map((object, i) => (
       <div key={i} className="card-panel-body-rows">
-      <span onClick={this.handleSpreadMarketSizeClick(object)} >{object.marketSize}</span>
-      <span onClick={this.handleSpreadPriceClick(object)} className="up">{object.price}</span>
-      <span>{object.exchange}</span>
+        <span className="ask-size" onClick={this.handleSpreadMarketSizeClick(object)} >{object.marketSize}</span>
+        <span className="ask-price up" onClick={this.handleSpreadPriceClick(object)} >{object.price}</span>
+        <span>{object.exchange}</span>
       </div>))}
     </div>
     </div>
@@ -111,15 +111,15 @@ render() {
 
 function mapStateToProps(state) {
   return {
-   currentPair: state.currentPair,
-   orderBook: state.orderBook
- };
+    currentPair: state.currentPair,
+    orderBook: state.orderBook
+  };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-   actions: bindActionCreators(actions, dispatch),
-   orderFormActions: bindActionCreators(orderFormActions, dispatch)
+    actions: bindActionCreators(actions, dispatch),
+    orderFormActions: bindActionCreators(orderFormActions, dispatch)
  };
 }
 
