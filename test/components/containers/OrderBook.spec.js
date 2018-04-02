@@ -97,15 +97,15 @@ describe("<OrderBook />", () => {
       />
     );
     wrapper.find('.ask-price').at(0).simulate("click");
-    // expect(orderFormActions.updateOrderForm).toHaveBeenCalledWith({
-    //     activeTab : 'limit',
-    //     isBuy : false,
-    //     limitPrice : initialState.orderBook.active[0].price,
-    //     buyAmount : 0,
-    //     buySize : 0,
-    //     exchange : initialState.orderBook.active[0].exchange
-    //   }
-    // );
+    expect(orderFormActions.updateOrderForm).toHaveBeenCalledWith({
+        activeTab : 'limit',
+        isBuy : false,
+        limitPrice : initialState.orderBook.active[0].price,
+        buyAmount : 0,
+        buySize : 0,
+        exchange : initialState.orderBook.active[0].exchange
+      }
+    );
   });
 
 });

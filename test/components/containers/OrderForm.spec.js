@@ -9,7 +9,7 @@ import initialState from "../../../src/reducers/initialState";
 
 describe("<OrderForm />", () => {
   const actions = {
-    updateCurrencyPair: jest.fn()
+    updateOrderFormTab: jest.fn()
   };
   const store = configureMockStore()(initialState);
 
@@ -24,19 +24,18 @@ describe("<OrderForm />", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("should call updateCurrencyPair with selected pair", () => {
-    // const wrapper = shallow(
-    //   <OrderForm
-    //     actions={actions}
-    //     currentPair={initialState.currentPair}
-    //     appData={initialState.appData}
-    //   />
-    // );
-
-    // wrapper.find('li').first().simulate("click");
-    // expect(actions.updateCurrencyPair).toHaveBeenCalledWith(
-    //   initialState.appData.availablePairs.pairCategory1[0]
-    // );
+  it("should call updateOrderFormTab with selected tab", () => {
+    const wrapper = shallow(
+      <OrderForm
+        actions={actions}
+        orderForm={initialState.orderForm}
+        currentPair={initialState.currentPair}
+        appData={initialState.appData}
+      />
+    );
+    const mockedEvent = { target: { getAttribute : () => { return 'TAB' } } };
+    wrapper.find('li[data-tab]').first().simulate("click", mockedEvent);
+    expect(actions.updateOrderFormTab).toHaveBeenCalledWith('TAB');
     
   });
 
