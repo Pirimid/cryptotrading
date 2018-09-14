@@ -6,8 +6,7 @@ import { Grid, Row, Col, Table } from 'react-bootstrap';
 import * as actions from '../../actions/orderBookActions';
 
 import { AgGridReact } from 'ag-grid-react';
-import 'ag-grid-community/dist/styles/ag-grid.css';
-import 'ag-grid-community/dist/styles/ag-theme-balham-dark.css';
+import '../../styles/agGridTheme.scss';
 
 
 export class OrderTable extends React.Component {

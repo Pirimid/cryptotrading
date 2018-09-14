@@ -1,0 +1,26 @@
+// $border-color: #FF0000;
+
+// Changes the font size
+// $font-size: 12px;
+
+// Changes the font family
+$font-family: "Open Sans", sans-serif;
+$font-weight: 600;
+$font-size: 12px;
+
+// Reverts the cell horizontal padding change between ag-fresh and ag-theme-fresh
+// $cell-horizontal-padding: 2px;
+
+// changes the icon color
+// $icon-color: red;
+
+$background-color: #15232c;
+$foreground-color: rgba(255, 255, 255, 0.7);
+$header-background-color: #15232c;
+$alt-background: #15232c;
+
+$ag-icons-path:"~ag-grid-community/src/styles/icons/";
+
+
+@import '~ag-grid-community/src/styles/ag-grid.scss';
+@import '~ag-grid-community/src/styles/ag-theme-balham-dark.scss';
