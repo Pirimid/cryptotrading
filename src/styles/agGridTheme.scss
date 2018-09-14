@@ -19,7 +19,7 @@ $foreground-color: rgba(255, 255, 255, 0.7);
 $header-background-color: #15232c;
 $alt-background: #15232c;
 
-$ag-icons-path:"~ag-grid-community/src/styles/icons/";
+$ag-icons-path:"./icons/";
 
 
 @import '~ag-grid-community/src/styles/ag-grid.scss';
