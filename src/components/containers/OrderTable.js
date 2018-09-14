@@ -1,72 +1,81 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import {Grid, Row, Col, Table } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Grid, Row, Col, Table } from 'react-bootstrap';
 import * as actions from '../../actions/orderBookActions';
+
+import { AgGridReact } from 'ag-grid-react';
+import 'ag-grid-community/dist/styles/ag-grid.css';
+import 'ag-grid-community/dist/styles/ag-theme-balham-dark.css';
+
 
 export class OrderTable extends React.Component {
 
-  render() {
+	render() {
+
+		const gridData = {
+			columnDefs: [
+				{ headerName: "Size", field: "size", checkboxSelection: true },
+				{ headerName: `Filed(${this.props.currentPair.unit1})`, field: "filled" },
+				{ headerName: `Price(${this.props.currentPair.unit2})`, field: "price" },
+				{ headerName: "Time", field: "time" },
+				{ headerName: "Status", field: "status" },
+				{ headerName: "Side", field: "side" },
+				{ headerName: "Exchange", field: "exchange" }
+
+			],
+			rowData: this.props.orderTable.map(({ size, filled, price, time, status, side, exchange } = order) => (
+				{ size, filled, price, time, status, side, exchange }
+			))
+		};
+
 		return (
 			<div>
-                <div className="card-fixed-header">
-    				<h2 className="card-title ">Orders</h2>
-			    </div>
+				<div className="card-fixed-header">
+					<h2 className="card-title ">Orders</h2>
+				</div>
 				<div className="clearfix"></div>
-				<Table className="l-g-table">
-					<thead>
-						<tr>
-							<th>Size</th>
-							<th>Filled({this.props.currentPair.unit1})</th>
-							<th>Price({this.props.currentPair.unit2})</th>
-							<th>Time</th>
-							<th>Status</th>
-							<th>Side</th>
-							<th>Exchange</th>
-						</tr>
-					</thead>
-					<tbody>
-					    { this.props.orderTable.length > 0 ?
-                        (this.props.orderTable.map((object, i) => (
-                            <tr key={i} >
-                                <td >{object.size}</td>
-                                <td >{object.filled}</td>
-                                <td >{object.price}</td>
-                                <td >{object.time}</td>
-                                <td >{object.status}</td>
-                                <td >{object.side}</td>
-                                <td >{object.exchange}</td>
-                            </tr>
-                        ))) : <tr><td colSpan="7" className="padding-top-50 text-align-center">You have no orders</td></tr> }
-
-
-					</tbody>
-				</Table>
+				<div className="l-g-table">
+					{this.props.orderTable.length > 0 ?
+						(<div
+							className="ag-theme-balham-dark"
+							style={{ width: "100%", height: "500px" }}
+						>
+							<AgGridReact
+								columnDefs={gridData.columnDefs}
+								rowData={gridData.rowData}
+								enableSorting={true}
+								enableFilter={true}
+								rowSelection="multiple"
+							>
+							</AgGridReact>
+						</div>) : <span style={{ color: "rgba(255, 255, 255, 0.7)" }} >You have no orders</span>}
+				</div>
 			</div>
 		);
-  }
+	}
 }
 
 OrderTable.propTypes = {
-  actions: PropTypes.object.isRequired,
-  currentPair: PropTypes.object.isRequired
+	actions: PropTypes.object.isRequired,
+	currentPair: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state) {
-  return {
-	currentPair: state.currentPair,
-	orderTable: state.orderTable
-  };
+	return {
+		currentPair: state.currentPair,
+		orderTable: state.orderTable
+	};
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-	actions: bindActionCreators(actions, dispatch)
-  };
+	return {
+		actions: bindActionCreators(actions, dispatch)
+	};
 }
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+	mapStateToProps,
+	mapDispatchToProps
 )(OrderTable);
