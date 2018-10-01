@@ -1,6 +1,6 @@
 # cryptotrading
 
-Here is the [Demo](https://crypto-trading-platform.herokuapp.com/)
+Here is the [Demo](https://pirimid-cryptoprototype.herokuapp.com/)
 
 ## Getting Started
 
