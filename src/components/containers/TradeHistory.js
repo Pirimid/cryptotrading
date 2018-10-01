@@ -13,7 +13,7 @@ export class TradeHistory extends React.Component {
         function onInterval(){
            this.props.actions.updateTradeHistory( this.props.tradeHistory[Math.floor(Math.random() * 4)]);
         }
-        setInterval( onInterval.bind(this) , 100);
+        setInterval( onInterval.bind(this) , 500);
     }
 
   render() {
