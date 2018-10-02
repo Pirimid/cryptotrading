@@ -7,10 +7,13 @@ export default function orderBookReducer(state = initialState.orderBook, action)
 
   switch (action.type) {
     case types.UPDATE_ORDER_BOOK:
-        return objectAssign({}, state, { 'active' : action.payload  } );
-        break;
+      newState = objectAssign({}, state, { 'active': action.payload });
+      break;
 
     default:
-      return state;
+      newState = state;
+      break;
   }
+
+  return newState;
 }

@@ -4,13 +4,17 @@ import initialState from './initialState';
 
 export default function orderBookReducer(state = initialState.orderTable, action) {
   let newState;
+
   switch (action.type) {
     case types.ADD_ORDER:
-        newState = state.push(action.payload);
-        return objectAssign([], state, newState );
-        break;
+      newState = state.push(action.payload);
+      newState = objectAssign([], state, newState);
+      break;
 
     default:
-      return state;
+      newState = state;
+      break;
   }
+
+  return newState;
 }

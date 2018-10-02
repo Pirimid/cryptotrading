@@ -7,10 +7,13 @@ export default function tradeHistoryReducer(state = initialState.tradeHistory, a
 
   switch (action.type) {
     case types.UPDATE_TRADE_HISTORY:
-        return objectAssign({}, state, { 'active' : action.payload  } );
-        break;
+      newState = objectAssign({}, state, { 'active': action.payload });
+      break;
 
     default:
-      return state;
+      newState = state;
+      break;
   }
+
+  return newState;
 }

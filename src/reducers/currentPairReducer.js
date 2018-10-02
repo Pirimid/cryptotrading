@@ -3,13 +3,17 @@ import objectAssign from 'object-assign';
 import initialState from './initialState';
 
 export default function appDataReducer(state = initialState.currentPair, action) {
+  let newState;
 
   switch (action.type) {
     case types.UPDATE_CURRENCY_PAIR:
-        return objectAssign({}, state, action.payload );
-        break;
+      newState = objectAssign({}, state, action.payload);
+      break;
 
     default:
-      return state;
+      newState = state;
+      break;
   }
+
+  return newState;
 }
