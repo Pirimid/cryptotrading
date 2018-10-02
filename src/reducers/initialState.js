@@ -24,7 +24,7 @@ export default {
                     unit1: 'BTC',
                     unit2: 'USD',
                     symbolUnit2: '$',
-                    lastTradePrice: 11123.01,
+                    lastTradePrice: 6568.01,
                     last24HourVolume: 16681,
                     last24HourPrice: -6.35
                 },
@@ -33,18 +33,18 @@ export default {
                     unit1: 'BTC',
                     unit2: 'EUR',
                     symbolUnit2: '€',
-                    lastTradePrice: 11123.01,
+                    lastTradePrice: 5691.52,
                     last24HourVolume: 1681,
-                    last24HourPrice: +6.35
+                    last24HourPrice: +6.51
                 },
                 {
                     pairCategory: 'Bitcoin (BTC)',
                     unit1: 'BTC',
                     unit2: 'GBP',
                     symbolUnit2: '£',
-                    lastTradePrice: 11123.01,
-                    last24HourVolume: 16681,
-                    last24HourPrice: -6.35
+                    lastTradePrice: 5050.20,
+                    last24HourVolume: 12621,
+                    last24HourPrice: -5.37
                 }
             ]
         },
