@@ -1,4 +1,5 @@
-# cryptotrading
+# Cryptotrading
+[![Build Status](https://travis-ci.com/Pirimid/cryptotrading.svg?branch=master)](https://travis-ci.com/Pirimid/cryptotrading)
 
 Here is the [Demo](https://pirimid-cryptoprototype.herokuapp.com/)
 
