@@ -14,48 +14,18 @@ exports[`<OrderTable /> should match snapshot 1`] = `
   <div
     className="clearfix"
   />
-  <table
-    className="l-g-table table"
+  <div
+    className="l-g-table"
   >
-    <thead>
-      <tr>
-        <th>
-          Size
-        </th>
-        <th>
-          Filled(
-          BTC
-          )
-        </th>
-        <th>
-          Price(
-          USD
-          )
-        </th>
-        <th>
-          Time
-        </th>
-        <th>
-          Status
-        </th>
-        <th>
-          Side
-        </th>
-        <th>
-          Exchange
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td
-          className="padding-top-50 text-align-center"
-          colSpan="7"
-        >
-          You have no orders
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <span
+      style={
+        Object {
+          "color": "rgba(255, 255, 255, 0.7)",
+        }
+      }
+    >
+      You have no orders
+    </span>
+  </div>
 </div>
 `;

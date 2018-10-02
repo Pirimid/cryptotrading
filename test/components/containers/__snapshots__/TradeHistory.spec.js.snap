@@ -40,15 +40,15 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.01879
+        0.02279837
       </span>
       <span
         className="up arrow"
       >
-        11227.123356
+        6574.529651
       </span>
       <span>
-        22:29:50
+        22:28:54
       </span>
       <span>
         GDAX
@@ -58,15 +58,15 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.02279837
+        0.01879
       </span>
       <span
         className="up arrow"
       >
-        11223.123356
+        6574.529451
       </span>
       <span>
-        22:28:54
+        22:29:50
       </span>
       <span>
         GDAX
@@ -81,7 +81,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        11216.123356
+        6599.642222
       </span>
       <span>
         22:28:50
@@ -94,30 +94,12 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.01879
-      </span>
-      <span
-        className="down arrow"
-      >
-        11209.123356
-      </span>
-      <span>
-        22:27:56
-      </span>
-      <span>
-        Binance
-      </span>
-    </div>
-    <div
-      className="card-panel-body-rows"
-    >
-      <span>
         0.02279837
       </span>
       <span
         className="down arrow"
       >
-        11210.123356
+        6564.244552
       </span>
       <span>
         22:27:50
@@ -135,7 +117,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        11211.123356
+        6599.642542
       </span>
       <span>
         22:27:49
@@ -148,30 +130,12 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.01879
-      </span>
-      <span
-        className="down arrow"
-      >
-        11233.123356
-      </span>
-      <span>
-        22:26:50
-      </span>
-      <span>
-        Krakan
-      </span>
-    </div>
-    <div
-      className="card-panel-body-rows"
-    >
-      <span>
         0.02279837
       </span>
       <span
         className="up arrow"
       >
-        11235.123356
+        6561.451276
       </span>
       <span>
         22:26:40
@@ -184,12 +148,48 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
+        0.01879
+      </span>
+      <span
+        className="down arrow"
+      >
+        6566.952425
+      </span>
+      <span>
+        22:27:56
+      </span>
+      <span>
+        Binance
+      </span>
+    </div>
+    <div
+      className="card-panel-body-rows"
+    >
+      <span>
+        0.01879
+      </span>
+      <span
+        className="down arrow"
+      >
+        6576.052516
+      </span>
+      <span>
+        22:26:50
+      </span>
+      <span>
+        Kraken
+      </span>
+    </div>
+    <div
+      className="card-panel-body-rows"
+    >
+      <span>
         0.05579837
       </span>
       <span
         className="up arrow"
       >
-        11232.123356
+        6574.529541
       </span>
       <span>
         22:26:30
@@ -207,7 +207,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        11230.123356
+        6599.646542
       </span>
       <span>
         22:26:20
@@ -220,48 +220,12 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        4.13879837
-      </span>
-      <span
-        className="up arrow"
-      >
-        11228.123356
-      </span>
-      <span>
-        22:25:50
-      </span>
-      <span>
-        Krakan
-      </span>
-    </div>
-    <div
-      className="card-panel-body-rows"
-    >
-      <span>
-        0.01279837
-      </span>
-      <span
-        className="down arrow"
-      >
-        11225.123356
-      </span>
-      <span>
-        22:25:48
-      </span>
-      <span>
-        Bittrex
-      </span>
-    </div>
-    <div
-      className="card-panel-body-rows"
-    >
-      <span>
         0.13879837
       </span>
       <span
         className="down arrow"
       >
-        11230.123356
+        6615.514237
       </span>
       <span>
         22:25:47
@@ -274,36 +238,18 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        1.01279837
+        0.01279837
       </span>
       <span
         className="down arrow"
       >
-        11235.123356
+        6564.246252
       </span>
       <span>
-        22:25:41
+        22:25:48
       </span>
       <span>
-        GDAX
-      </span>
-    </div>
-    <div
-      className="card-panel-body-rows"
-    >
-      <span>
-        0.01879
-      </span>
-      <span
-        className="up arrow"
-      >
-        11236.123356
-      </span>
-      <span>
-        22:25:30
-      </span>
-      <span>
-        Binance
+        Bittrex
       </span>
     </div>
     <div
@@ -315,7 +261,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        11235.123356
+        6574.529251
       </span>
       <span>
         22:22:50
@@ -328,15 +274,33 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.05579837
+        4.13879837
       </span>
       <span
         className="up arrow"
       >
-        11232.123356
+        6576.054716
       </span>
       <span>
-        22:21:50
+        22:25:50
+      </span>
+      <span>
+        Kraken
+      </span>
+    </div>
+    <div
+      className="card-panel-body-rows"
+    >
+      <span>
+        1.01279837
+      </span>
+      <span
+        className="down arrow"
+      >
+        6574.512651
+      </span>
+      <span>
+        22:25:41
       </span>
       <span>
         GDAX
@@ -351,7 +315,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        11230.123356
+        6599.643642
       </span>
       <span>
         22:21:10
@@ -364,36 +328,18 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.13879837
+        0.05579837
       </span>
       <span
         className="up arrow"
       >
-        11228.123356
+        6576.054721
       </span>
       <span>
-        22:21:06
+        22:21:50
       </span>
       <span>
-        Krakan
-      </span>
-    </div>
-    <div
-      className="card-panel-body-rows"
-    >
-      <span>
-        0.01279837
-      </span>
-      <span
-        className="down arrow"
-      >
-        11225.123356
-      </span>
-      <span>
-        22:21:01
-      </span>
-      <span>
-        Bittrex
+        GDAX
       </span>
     </div>
     <div
@@ -405,7 +351,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        11236.123356
+        6599.646547
       </span>
       <span>
         22:20:30
@@ -418,12 +364,66 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
+        0.01879
+      </span>
+      <span
+        className="up arrow"
+      >
+        6566.952145
+      </span>
+      <span>
+        22:25:30
+      </span>
+      <span>
+        Binance
+      </span>
+    </div>
+    <div
+      className="card-panel-body-rows"
+    >
+      <span>
+        0.01279837
+      </span>
+      <span
+        className="down arrow"
+      >
+        6564.241252
+      </span>
+      <span>
+        22:21:01
+      </span>
+      <span>
+        Bittrex
+      </span>
+    </div>
+    <div
+      className="card-panel-body-rows"
+    >
+      <span>
+        0.13879837
+      </span>
+      <span
+        className="up arrow"
+      >
+        6576.051476
+      </span>
+      <span>
+        22:19:06
+      </span>
+      <span>
+        Kraken
+      </span>
+    </div>
+    <div
+      className="card-panel-body-rows"
+    >
+      <span>
         0.02279837
       </span>
       <span
         className="down arrow"
       >
-        11111.123356
+        6576.054121
       </span>
       <span>
         22:20:07
@@ -436,18 +436,18 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.15579837
+        0.13879837
       </span>
       <span
         className="up arrow"
       >
-        11139.123356
+        6576.059636
       </span>
       <span>
-        22:19:50
+        22:21:06
       </span>
       <span>
-        HitBTC
+        Kraken
       </span>
     </div>
     <div
@@ -459,7 +459,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        11134.123356
+        6599.646123
       </span>
       <span>
         22:19:10
@@ -472,36 +472,36 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       className="card-panel-body-rows"
     >
       <span>
-        0.13879837
-      </span>
-      <span
-        className="up arrow"
-      >
-        11123.123356
-      </span>
-      <span>
-        22:19:06
-      </span>
-      <span>
-        Krakan
-      </span>
-    </div>
-    <div
-      className="card-panel-body-rows"
-    >
-      <span>
         0.01279837
       </span>
       <span
         className="down arrow"
       >
-        11111.123356
+        6564.241245
       </span>
       <span>
         22:19:01
       </span>
       <span>
         Bittrex
+      </span>
+    </div>
+    <div
+      className="card-panel-body-rows"
+    >
+      <span>
+        0.15579837
+      </span>
+      <span
+        className="up arrow"
+      >
+        6614.522367
+      </span>
+      <span>
+        22:19:50
+      </span>
+      <span>
+        HitBTC
       </span>
     </div>
   </div>

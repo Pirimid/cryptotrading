@@ -6,7 +6,7 @@ describe('Reducers::currentPairReducer', () => {
     return {
       "last24HourPrice": -6.35,
       "last24HourVolume": 16681,
-      "lastTradePrice": 11123.01, 
+      "lastTradePrice": 6568.01, 
       "unit1": "BTC", 
       "unit2": "USD"
     };
@@ -30,7 +30,7 @@ describe('Reducers::currentPairReducer', () => {
   });
 
   it('should handle UPDATE_CURRENCY_PAIR', () => {
-    let payload = {"last24HourPrice": 6.35, "last24HourVolume": 1681, "lastTradePrice": 1123.01, "unit1": "ETH", "unit2": "USD"};
+    let payload = {"last24HourPrice": 6.51, "last24HourVolume": 1681, "lastTradePrice": 5691.52, "unit1": "ETH", "unit2": "USD"};
     const action = { type: ActionTypes.UPDATE_CURRENCY_PAIR, payload, settings: getAppState() };
     const expected = Object.assign(getAppState(), payload);
 

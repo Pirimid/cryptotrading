@@ -358,7 +358,7 @@ exports[`<OrderForm /> should match snapshot 1`] = `
                     role="menuitem"
                     tabIndex="-1"
                   >
-                    Krakan
+                    Kraken
                   </a>
                 </li>
               </ul>
