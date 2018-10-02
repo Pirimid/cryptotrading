@@ -42,7 +42,7 @@ export default {
                     unit1: 'BTC',
                     unit2: 'GBP',
                     symbolUnit2: '£',
-                    lastTradePrice: 5050.20,
+                    lastTradePrice: 5050.21,
                     last24HourVolume: 12621,
                     last24HourPrice: -5.37
                 }
