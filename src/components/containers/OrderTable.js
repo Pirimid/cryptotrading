@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Grid, Row, Col, Table } from 'react-bootstrap';
 import * as actions from '../../actions/orderBookActions';
 
 import { AgGridReact } from 'ag-grid-react';
@@ -22,7 +21,7 @@ export class OrderTable extends React.Component {
 				{ headerName: "Exchange", field: "exchange" }
 
 			],
-			rowData: this.props.orderTable.map(({ size, filled, price, time, status, side, exchange } = order) => (
+			rowData: this.props.orderTable.map(({ size, filled, price, time, status, side, exchange }) => (
 				{ size, filled, price, time, status, side, exchange }
 			))
 		};
@@ -32,7 +31,7 @@ export class OrderTable extends React.Component {
 				<div className="card-fixed-header">
 					<h2 className="card-title ">Orders</h2>
 				</div>
-				<div className="clearfix"></div>
+				<div className="clearfix" />
 				<div className="l-g-table">
 					{this.props.orderTable.length > 0 ?
 						(<div
@@ -45,8 +44,7 @@ export class OrderTable extends React.Component {
 								enableSorting={true}
 								enableFilter={true}
 								rowSelection="multiple"
-							>
-							</AgGridReact>
+							/>
 						</div>) : <span style={{ color: "rgba(255, 255, 255, 0.7)" }} >You have no orders</span>}
 				</div>
 			</div>
