@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "engines": {
     "npm": ">=3",
-    "node": ">=8"
+    "node": "8"
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
