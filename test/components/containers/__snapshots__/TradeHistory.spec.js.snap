@@ -45,7 +45,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6574.529651
+        5574.529651
       </span>
       <span>
         22:28:54
@@ -63,7 +63,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6574.529451
+        5574.529451
       </span>
       <span>
         22:29:50
@@ -81,7 +81,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6599.642222
+        5599.642222
       </span>
       <span>
         22:28:50
@@ -99,7 +99,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6564.244552
+        5564.244552
       </span>
       <span>
         22:27:50
@@ -117,7 +117,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6599.642542
+        5599.642542
       </span>
       <span>
         22:27:49
@@ -135,7 +135,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6561.451276
+        5561.451276
       </span>
       <span>
         22:26:40
@@ -153,7 +153,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6566.952425
+        5566.952425
       </span>
       <span>
         22:27:56
@@ -171,7 +171,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6576.052516
+        5576.052516
       </span>
       <span>
         22:26:50
@@ -189,7 +189,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6574.529541
+        5574.529541
       </span>
       <span>
         22:26:30
@@ -207,7 +207,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6599.646542
+        5599.646542
       </span>
       <span>
         22:26:20
@@ -225,7 +225,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6615.514237
+        5615.514237
       </span>
       <span>
         22:25:47
@@ -243,7 +243,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6564.246252
+        5564.246252
       </span>
       <span>
         22:25:48
@@ -261,7 +261,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6574.529251
+        5574.529251
       </span>
       <span>
         22:22:50
@@ -279,7 +279,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6576.054716
+        5576.054716
       </span>
       <span>
         22:25:50
@@ -297,7 +297,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6574.512651
+        5574.512651
       </span>
       <span>
         22:25:41
@@ -315,7 +315,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6599.643642
+        5599.643642
       </span>
       <span>
         22:21:10
@@ -333,7 +333,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6576.054721
+        5576.054721
       </span>
       <span>
         22:21:50
@@ -351,7 +351,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6599.646547
+        5599.646547
       </span>
       <span>
         22:20:30
@@ -369,7 +369,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6566.952145
+        5566.952145
       </span>
       <span>
         22:25:30
@@ -387,7 +387,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6564.241252
+        5564.241252
       </span>
       <span>
         22:21:01
@@ -405,7 +405,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6576.051476
+        5576.051476
       </span>
       <span>
         22:19:06
@@ -423,7 +423,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6576.054121
+        5576.054121
       </span>
       <span>
         22:20:07
@@ -441,7 +441,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6576.059636
+        5576.059636
       </span>
       <span>
         22:21:06
@@ -459,7 +459,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6599.646123
+        5599.646123
       </span>
       <span>
         22:19:10
@@ -477,7 +477,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="down arrow"
       >
-        6564.241245
+        5564.241245
       </span>
       <span>
         22:19:01
@@ -495,7 +495,7 @@ exports[`<TradeHistory /> should match snapshot 1`] = `
       <span
         className="up arrow"
       >
-        6614.522367
+        5614.522367
       </span>
       <span>
         22:19:50

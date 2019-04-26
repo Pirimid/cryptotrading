@@ -59,7 +59,7 @@ exports[`<Header /> should match snapshot 1`] = `
             <span>
               $
                
-              6568.01
+              5568.01
             </span>
             <span
               className="down"
@@ -81,7 +81,7 @@ exports[`<Header /> should match snapshot 1`] = `
             <span>
               €
                
-              5691.52
+              4891.52
             </span>
             <span
               className="up"
@@ -103,7 +103,7 @@ exports[`<Header /> should match snapshot 1`] = `
             <span>
               £
                
-              5050.21
+              4231.85
             </span>
             <span
               className="down"
@@ -125,7 +125,7 @@ exports[`<Header /> should match snapshot 1`] = `
       <div
         className="pair nav-title"
       >
-        6568.01
+        5568.01
          
         BTC
       </div>

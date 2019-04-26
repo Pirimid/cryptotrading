@@ -45,7 +45,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6574.215243
+        5574.215243
       </span>
       <span>
         GDAX
@@ -64,7 +64,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6599.694518
+        5599.694518
       </span>
       <span>
         Bitfinex
@@ -83,7 +83,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6574.215243
+        5574.215243
       </span>
       <span>
         GDAX
@@ -102,7 +102,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6568.929686
+        5568.929686
       </span>
       <span>
         Binance
@@ -121,7 +121,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6564.256353
+        5564.256353
       </span>
       <span>
         Bittrex
@@ -140,7 +140,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6598.563322
+        5598.563322
       </span>
       <span>
         Bitfinex
@@ -159,7 +159,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6576.003516
+        5576.003516
       </span>
       <span>
         Kraken
@@ -178,7 +178,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6581.451376
+        5581.451376
       </span>
       <span>
         CEX.IO
@@ -197,7 +197,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6574.533322
+        5574.533322
       </span>
       <span>
         GDAX
@@ -216,7 +216,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6599.843322
+        5599.843322
       </span>
       <span>
         Bitfinex
@@ -235,7 +235,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6576.053516
+        5576.053516
       </span>
       <span>
         Kraken
@@ -254,7 +254,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6564.346353
+        5564.346353
       </span>
       <span>
         Bittrex
@@ -273,7 +273,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6615.514027
+        5615.514027
       </span>
       <span>
         HitBTC
@@ -292,7 +292,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6574.313312
+        5574.313312
       </span>
       <span>
         GDAX
@@ -311,7 +311,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6568.952435
+        5568.952435
       </span>
       <span>
         Binance
@@ -330,7 +330,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="buy-price down"
         onClick={[Function]}
       >
-        6574.529851
+        5574.529851
       </span>
       <span>
         GDAX
@@ -360,7 +360,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6574.215243
+        5574.215243
       </span>
       <span>
         GDAX
@@ -379,7 +379,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6599.694518
+        5599.694518
       </span>
       <span>
         Bitfinex
@@ -398,7 +398,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6574.215243
+        5574.215243
       </span>
       <span>
         GDAX
@@ -417,7 +417,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6568.929686
+        5568.929686
       </span>
       <span>
         Binance
@@ -436,7 +436,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6564.256353
+        5564.256353
       </span>
       <span>
         Bittrex
@@ -455,7 +455,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6598.563322
+        5598.563322
       </span>
       <span>
         Bitfinex
@@ -474,7 +474,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6576.003516
+        5576.003516
       </span>
       <span>
         Kraken
@@ -493,7 +493,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6581.451376
+        5581.451376
       </span>
       <span>
         CEX.IO
@@ -512,7 +512,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6574.533322
+        5574.533322
       </span>
       <span>
         GDAX
@@ -531,7 +531,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6599.843322
+        5599.843322
       </span>
       <span>
         Bitfinex
@@ -550,7 +550,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6576.053516
+        5576.053516
       </span>
       <span>
         Kraken
@@ -569,7 +569,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6564.346353
+        5564.346353
       </span>
       <span>
         Bittrex
@@ -588,7 +588,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6615.514027
+        5615.514027
       </span>
       <span>
         HitBTC
@@ -607,7 +607,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6574.313312
+        5574.313312
       </span>
       <span>
         GDAX
@@ -626,7 +626,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6568.952435
+        5568.952435
       </span>
       <span>
         Binance
@@ -645,7 +645,7 @@ exports[`<OrderBook /> should match snapshot 1`] = `
         className="ask-price up"
         onClick={[Function]}
       >
-        6574.529851
+        5574.529851
       </span>
       <span>
         GDAX

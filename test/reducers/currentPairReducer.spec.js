@@ -6,7 +6,7 @@ describe('Reducers::currentPairReducer', () => {
     return {
       "last24HourPrice": -6.35,
       "last24HourVolume": 16681,
-      "lastTradePrice": 6568.01, 
+      "lastTradePrice": 5568.01, 
       "unit1": "BTC", 
       "unit2": "USD"
     };
