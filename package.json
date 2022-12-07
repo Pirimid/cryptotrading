@@ -28,7 +28,7 @@
   "dependencies": {
     "ag-grid-community": "^19.0.0",
     "ag-grid-react": "^19.0.0",
-    "express": "^4.13.1",
+    "express": "^4.17.3",
     "highcharts-more": "^0.1.7",
     "object-assign": "4.1.0",
     "react": "16.2.0",
